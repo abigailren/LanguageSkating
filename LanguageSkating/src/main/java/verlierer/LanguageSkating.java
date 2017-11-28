@@ -57,6 +57,16 @@ public class LanguageSkating extends GraphicsProgram{
         else if (gobj.equals(spain)){
             add(new GLabel("Lol",650,300));}
     }
+
+    public void mouseEntered(MouseEvent e) {
+        last = new GPoint(e.getPoint());
+        gobj = getElementAt(last);
+        if (gobj.equals(germany)){
+            add(new GLabel("Yooooo",50,300));
+        }
+
+    }
+
     private GObject gobj;           /* The object being dragged */
     private GPoint last;
 }
