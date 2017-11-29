@@ -28,10 +28,10 @@ public class Opening extends GraphicsProgram {
     }
     public void init() {
 
-        germany.scale(.5, .5);
-        japan.scale(.5, .5);
-        china.scale(.5, .5);
-        spain.scale(.5, .5);
+        germany.scale(.8, .8);
+        japan.scale(.8, .8);
+        china.scale(.8, .8);
+        spain.scale(.8, .8);
 
         add(germany, 50, 100);
         add(japan, 250, 100);
@@ -44,7 +44,7 @@ public class Opening extends GraphicsProgram {
         GPoint last = new GPoint(e.getPoint());
         gobj = getElementAt(last);
         if (gobj.equals(germany)) {
-            add(new Character().getSummary(), 50, 300);
+            add(new Germany().getSummary(), 50, 300);
         }
         else if (gobj.equals(japan)) {
             add(new GLabel("Yo", 250, 300));

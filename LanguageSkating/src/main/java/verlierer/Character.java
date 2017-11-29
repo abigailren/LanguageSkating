@@ -3,7 +3,7 @@ import acm.graphics.*;
 /**
  * Created by abigailren on 11/28/17.
  */
-public  class Character {
+public abstract class Character {
     GImage appearance;
     GLabel bio;
 
