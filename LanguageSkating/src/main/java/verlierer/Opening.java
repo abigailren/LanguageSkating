@@ -9,7 +9,7 @@ import java.awt.event.*;
  * Created by abigailren on 11/28/17.
  */
 public class Opening extends GraphicsProgram {
-    GImage germany = new GImage("germany.png");
+    GImage germany = new Germany().appearance;
     GImage japan = new GImage("japan.png");
     GImage china = new GImage("china.jpeg");
     GImage spain = new GImage("spain.png");
@@ -46,7 +46,7 @@ public class Opening extends GraphicsProgram {
         if (gobj.equals(germany)) {
             add(new Character().getSummary(), 50, 300);
         }
-        if (gobj.equals(japan)) {
+        else if (gobj.equals(japan)) {
             add(new GLabel("Yo", 250, 300));
         } else if (gobj.equals(china)) {
             add(new GLabel("Yolo", 450, 300));
@@ -74,33 +74,15 @@ public class Opening extends GraphicsProgram {
                 } else {
                     if (gobj.equals(germany)) {
                         add(yo);
-                        remove(yo1);
-                        remove(yo2);
-                        remove(yo3);
                     } else if (gobj.equals(japan)) {
                         add(yo1);
-                        remove(yo);
-                        remove(yo2);
-                        remove(yo3);
                     } else if (gobj.equals(china)) {
                         add(yo2);
-                        remove(yo);
-                        remove(yo1);
-                        remove(yo3);
-                        ;
                     } else if (gobj.equals(spain)) {
                         add(yo3);
-                        remove(yo);
-                        remove(yo1);
-                        remove(yo2);
-                        ;
-                    } else {
-                        add(new GLabel("Nothing", 300, 400));
                     }
                 }
-            } else
-                add(new GLabel("AHHH", 10, 10));
-
+            }
 
         }
 
