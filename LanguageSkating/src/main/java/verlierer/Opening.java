@@ -11,7 +11,7 @@ import java.awt.event.*;
 public class Opening extends GraphicsProgram {
     GImage germany = new Germany().appearance;
     GImage japan = new GImage("japan.png");
-    GImage china = new GImage("china.jpeg");
+    GImage china = new GImage("china.png");
     GImage spain = new GImage("spain.png");
     GLabel yo = new GLabel("Yoooooooo", 50, 300);
     GLabel yo1 = new GLabel("Yo", 250, 300);
@@ -28,10 +28,10 @@ public class Opening extends GraphicsProgram {
     }
     public void init() {
 
-        germany.scale(.8, .8);
-        japan.scale(.8, .8);
-        china.scale(.8, .8);
-        spain.scale(.8, .8);
+        germany.scale(.5, .5);
+        japan.scale(.5, .5);
+        china.scale(.5, .5);
+        spain.scale(.5, .5);
 
         add(germany, 50, 100);
         add(japan, 250, 100);
