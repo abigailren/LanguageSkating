@@ -23,6 +23,12 @@ public class LanguageSkating extends GraphicsProgram{
     GObject china = new GImage("china.jpeg");
     GObject spain = new GImage("spain.png");
 
+    public static void main(String[] args) {
+        new LanguageSkating().start(args);
+    }
+    public void run(){
+        init();
+    }
     public void init(){
 
 
@@ -36,7 +42,7 @@ public class LanguageSkating extends GraphicsProgram{
         add(spain,650,100);
         addMouseListeners();
     }
-    // public static void main(String[] args) {
+
     //  new LanguageSkating().start(args);
     //}
 

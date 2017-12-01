@@ -3,14 +3,16 @@ import acm.graphics.*;
 /**
  * Created by abigailren on 11/28/17.
  */
-public  class Character {
+public abstract class Character {
     GImage appearance;
+    GLabel bio;
+
 
     public GImage getAppearance(){
         return appearance;
     }
     public GLabel getSummary(){
-        return new GLabel("I am Germany");
+        return bio;
     }
 
 }
