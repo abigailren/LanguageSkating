@@ -2,26 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="45ef18d9-15ec-452b-a896-a652237bb94f" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/China.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/German.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Japan.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Spain.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/verlierer/Germany.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/verlierer/Germany.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/japan.png" afterPath="$PROJECT_DIR$/japan.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spain.png" afterPath="$PROJECT_DIR$/spain.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/LanguageSkating-1.0-SNAPSHOT.jar" afterPath="$PROJECT_DIR$/target/LanguageSkating-1.0-SNAPSHOT.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/verlierer/Character.class" afterPath="$PROJECT_DIR$/target/classes/verlierer/Character.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/verlierer/LanguageSkating.class" afterPath="$PROJECT_DIR$/target/classes/verlierer/LanguageSkating.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/verlierer/Opening.class" afterPath="$PROJECT_DIR$/target/classes/verlierer/Opening.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/verlierer/Character.java" afterPath="$PROJECT_DIR$/src/main/java/verlierer/Character.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/verlierer/LanguageSkating.java" afterPath="$PROJECT_DIR$/src/main/java/verlierer/LanguageSkating.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/verlierer/Opening.java" afterPath="$PROJECT_DIR$/src/main/java/verlierer/Opening.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-verlierer.AppTest.xml" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-verlierer.AppTest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/surefire-reports/verlierer.AppTest.txt" afterPath="$PROJECT_DIR$/target/surefire-reports/verlierer.AppTest.txt" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -62,8 +43,8 @@
       <file leaf-file-name="workspace.xml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="455" column="32" lean-forward="false" selection-start-line="455" selection-start-column="32" selection-end-line="455" selection-end-column="32" />
+            <state relative-caret-position="-153">
+              <caret line="435" column="32" lean-forward="false" selection-start-line="435" selection-start-column="32" selection-end-line="435" selection-end-column="32" />
               <folding />
             </state>
           </provider>
@@ -708,12 +689,12 @@
       <updated>1511898260417</updated>
       <workItem from="1511898261809" duration="13000" />
       <workItem from="1511907881134" duration="1042000" />
-      <workItem from="1512091494087" duration="33000" />
+      <workItem from="1512091494087" duration="621000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1088000" />
+    <option name="totallyTimeSpent" value="1676000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="167" y="23" width="1198" height="782" extended-state="0" />
@@ -872,8 +853,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="455" column="32" lean-forward="false" selection-start-line="455" selection-start-column="32" selection-end-line="455" selection-end-column="32" />
+        <state relative-caret-position="-153">
+          <caret line="435" column="32" lean-forward="false" selection-start-line="435" selection-start-column="32" selection-end-line="435" selection-end-column="32" />
           <folding />
         </state>
       </provider>
