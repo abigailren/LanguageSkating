@@ -1,17 +1,17 @@
 package verlierer;
 
 
-public class bios {
+public class Bios {
 
-    public static String[] words = new String[]{"Hello", "Goodbye", "Yes",
+    public String[] words = new String[]{"Hello", "Goodbye", "Yes",
             "No", "Thanks", "Good", "Bad", "Not", "Happy",
             "Sad", "Who", "What", "When", "Where", "Why", "How"};
 
-    public static String[] spanishWords = new String[]{"Hola", "Adios", "Si",
+    public String[] spanishWords = new String[]{"Hola", "Adios", "Si",
             "No", "Gracias", "Bueno/a", "Malo/a", "No", "contento/a",
             "triste", "Quien", "Que", "Cuando", "Donde", "Por Que", "Como"};
 
-    public static String japanBio = "Japan McJapanFace, who is currently considered one of the top skaters \n"
+    public String japanBio = "Japan McJapanFace, who is currently considered one of the top skaters \n"
             + "in the senior division, is the reigning Olympic gold champion and \n"
             + "is looking to be the first male skater in decades to win  consecutive \n"
             + "gold. Currently in his prime years in name in the history of skating \n"
@@ -30,14 +30,14 @@ public class bios {
             + "they sometimes look bad if they don’t like Japan even though he \n"
             + "treats them completely differently from how he treats the general public. \n";
 
-    public static String spainBio = "Spain McSpainFace is the clear underdog of the skating community, "
+    public String spainBio = "Spain McSpainFace is the clear underdog of the skating community, "
             + "who shot\nto fame by winning last year's worlds"
             + "surprising everyone and becoming the\nfirst Spanish ice skater to do so."
             + "Will he also bring Spain their first\nOlympic Gold medal in men’s skating, "
             + "or will he crumble under the astounding\npressure that only the Olympic games"
             + "can bring? Either way, he is the fan\nfavorite this year.\n";
 
-    public static String chinaBio = "China McChinaFace, who won his first worlds this year at just 16, " +
+    public String chinaBio = "China McChinaFace, who won his first worlds this year at just 16, " +
             "is looking\nto repeat his stellar performance last year and take the a medal again this\nyear. " +
             "There was a scary moment about a month back when an ankle injury\nthreatened to keep him from " +
             "the Olympic games, but he has persevered and\nshows no hesitation in his warmups here tonight. " +
@@ -52,7 +52,7 @@ public class bios {
             "He’s a lot more confident on the ice and tends to have fun, charming skating\npersona " +
             "because he forgets about his worries and just really loves skating??\n";
 
-    public static String germanyBio = "Among this year's top contenders is German McGermanFace, " +
+    public String germanyBio = "Among this year's top contenders is German McGermanFace, " +
             "a three-time olympic\nsilver winner, who is competing once again against Japan McJapanFace, " +
             "who beat\nhim for gold in the last Winter Olympics. Whilst he may not have any olympic\n" +
             "golds and is the oldest on the rink, McGermanFace has won more gold medals in\nthe worlds " +
@@ -63,9 +63,23 @@ public class bios {
 
 
 
-
-
-
+    public String getBio(String s){
+        if (s.equals("germany")){
+            return germanyBio;
+        }
+        else if (s.equals("japan")){
+            return japanBio;
+        }
+        else if (s.equals("china")){
+            return chinaBio;
+        }
+        else if (s.equals("spain")){
+            return spainBio;
+        }
+        else
+            return "Nothing";
+    }
+/*
     public static void main(String[] args)  {
 
 
@@ -77,7 +91,7 @@ public class bios {
         System.out.println(germanyBio);
 
 
-    }
+    }*/
 
 
 }

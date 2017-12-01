@@ -1,5 +1,5 @@
 
-package meow;
+package verlierer;
  
 import java.util.Random;
 

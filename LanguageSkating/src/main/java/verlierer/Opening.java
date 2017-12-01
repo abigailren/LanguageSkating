@@ -9,14 +9,15 @@ import java.awt.event.*;
  * Created by abigailren on 11/28/17.
  */
 public class Opening extends GraphicsProgram {
+    Bios bio = new Bios();
     GImage germany = new Germany().appearance;
     GImage japan = new GImage("japan.png");
     GImage china = new GImage("china.png");
     GImage spain = new GImage("spain.png");
-    GLabel yo = new GLabel("Yoooooooo", 50, 300);
-    GLabel yo1 = new GLabel("Yo", 250, 300);
-    GLabel yo2 = new GLabel("Yolo", 450, 300);
-    GLabel yo3 = new GLabel("lol", 650, 300);
+    GLabel yo = new GLabel(bio.getBio("germany"), 50, 300);
+    GLabel yo1 = new GLabel(bio.getBio("japan"), 250, 300);
+    GLabel yo2 = new GLabel(bio.getBio("china"), 450, 300);
+    GLabel yo3 = new GLabel(bio.getBio("spain"), 650, 300);
     private GObject gobj;
 
 
