@@ -27,7 +27,6 @@ public class Opening extends GraphicsProgram {
         init();
     }
     public void init() {
-
         germany.scale(.5, .5);
         japan.scale(.5, .5);
         china.scale(.5, .5);
@@ -38,6 +37,8 @@ public class Opening extends GraphicsProgram {
         add(china, 450, 100);
         add(spain, 650, 100);
         addMouseListeners();
+        println("かああああああ");
+
     }
 
     public void mouseClicked(MouseEvent e) {
