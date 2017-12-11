@@ -40,13 +40,14 @@ public class Opening extends GraphicsProgram {
         addMouseListeners();
         println("かああああああ");
 
+
     }
 
     public void mouseClicked(MouseEvent e) {
         GPoint last = new GPoint(e.getPoint());
         gobj = getElementAt(last);
         if (gobj.equals(germany)) {
-            System.exit(0);//add(new Germany().getSummary(), 50, 300);
+            this.stop();//add(new Germany().getSummary(), 50, 300);
         }
         else if (gobj.equals(japan)) {
             add(new GLabel("Yo", 250, 300));
