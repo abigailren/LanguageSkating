@@ -8,7 +8,7 @@ import java.awt.event.*;
 /**
  * Created by abigailren on 11/28/17.
  */
-public class Opening extends GraphicsProgram {
+public class Opening extends GCompound {
     Bios bio = new Bios();
     GImage germany = new Germany().appearance;
     GImage japan = new GImage("japan.png");
@@ -21,7 +21,20 @@ public class Opening extends GraphicsProgram {
     private GObject gobj;
     String selection="";
 
-
+    public Opening(){
+        germany.setSize(150, 300);
+        japan.setSize(150, 300);
+        china.setSize(150, 300);
+        spain.setSize(150, 300);
+        yo.move(50,100);
+        yo1.move(250,100);
+        yo2.move(450,100);
+        yo3.move(650,100);
+        add(germany, 50, 100);
+        add(japan, 250, 100);
+        add(china, 450, 100);
+        add(spain, 650, 100);
+    }
     public static void main(String[] args) {
         new Opening().start(args);
     }
@@ -43,13 +56,13 @@ public class Opening extends GraphicsProgram {
         add(japan, 250, 100);
         add(china, 450, 100);
         add(spain, 650, 100);
-        addMouseListeners();
-        println("かああああああ");
+        //addMouseListeners();
+        //println("かああああああ");
 
 
 
     }
-
+/*
 
     public void mouseClicked(MouseEvent e) {
         GPoint last = new GPoint(e.getPoint());
@@ -102,5 +115,5 @@ public class Opening extends GraphicsProgram {
 
         }
 
-    }
+    }*/
 }
