@@ -55,11 +55,10 @@ public class Bios {
             "because he forgets about his worries and just really loves skating??\n";*/
 
     public String germanyBio = "Among this year's top contenders is German McGermanFace, " +
-            "a three-time olympic\nsilver winner, who is competing once again against Japan McJapanFace, " +
-            "who beat\nhim for gold in the last Winter Olympics. Whilst he may not have any olympic\n" +
+            "a three-time olympic\nsilver winner. Whilst he may not have any olympic\n" +
             "golds and is the oldest on the rink, McGermanFace has won more gold medals in\nthe worlds " +
-            "than the others combined, due to his 5 year gold streak in his early\n20’s, still leaving " +
-            "him amongst the top skaters in the world. However, with this\nbeing his 4th Olympics and " +
+            "than the others combined, due to his 5 year gold streak in his early\n20’s. " +
+            "However, with this\nbeing his 4th Olympics and " +
             "him rapidly approaching his 30’s, this would seem to\nbe his last chance at that olympic " +
             "gold he’s never quite achieved.\n";
 
