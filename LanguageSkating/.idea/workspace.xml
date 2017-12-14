@@ -2,11 +2,34 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="45ef18d9-15ec-452b-a896-a652237bb94f" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/.netbeans_automatic_build" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/verlierer/China.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/verlierer/Chinese.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/verlierer/Japan.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/verlierer/Spain.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/verlierer/Spanish.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/test-classes/.netbeans_automatic_build" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/verlierer/China.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/verlierer/Chinese.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/verlierer/Japan.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/verlierer/Spain.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/verlierer/Spanish.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Japan.png" afterPath="$PROJECT_DIR$/Japan.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Spain.png" afterPath="$PROJECT_DIR$/Spain.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/verlierer/German.java" afterPath="$PROJECT_DIR$/src/main/java/verlierer/German.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/verlierer/Language.java" afterPath="$PROJECT_DIR$/src/main/java/verlierer/Language.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/verlierer/Main.java" afterPath="$PROJECT_DIR$/src/main/java/verlierer/Main.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/meow/meow2point0.class" afterPath="$PROJECT_DIR$/target/classes/meow/meow2point0.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/verlierer/Bios.class" afterPath="$PROJECT_DIR$/target/classes/verlierer/Bios.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/verlierer/Character.class" afterPath="$PROJECT_DIR$/target/classes/verlierer/Character.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/verlierer/Console.class" afterPath="$PROJECT_DIR$/target/classes/verlierer/Console.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/verlierer/German.class" afterPath="$PROJECT_DIR$/target/classes/verlierer/German.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/verlierer/Germany.class" afterPath="$PROJECT_DIR$/target/classes/verlierer/Germany.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/verlierer/Japanese.class" afterPath="$PROJECT_DIR$/target/classes/verlierer/Japanese.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/verlierer/Language.class" afterPath="$PROJECT_DIR$/target/classes/verlierer/Language.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/verlierer/LanguageSkating.class" afterPath="$PROJECT_DIR$/target/classes/verlierer/LanguageSkating.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/verlierer/Main.class" afterPath="$PROJECT_DIR$/target/classes/verlierer/Main.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/verlierer/Meow.class" afterPath="$PROJECT_DIR$/target/classes/verlierer/Meow.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/verlierer/Opening.class" afterPath="$PROJECT_DIR$/target/classes/verlierer/Opening.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/verlierer/Paragraph.class" afterPath="$PROJECT_DIR$/target/classes/verlierer/Paragraph.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/verlierer/Japanese.java" afterPath="$PROJECT_DIR$/src/main/java/verlierer/Japanese.java" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -51,7 +74,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/verlierer/Plot.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="225">
-              <caret line="15" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+              <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
               <folding>
                 <element signature="e#135#136#0" expanded="true" />
                 <element signature="e#164#165#0" expanded="true" />
@@ -62,11 +85,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Paragraph.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Paragraph.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/verlierer/Paragraph.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="182">
-              <caret line="30" column="36" lean-forward="true" selection-start-line="30" selection-start-column="36" selection-end-line="30" selection-end-column="36" />
+              <caret line="30" column="36" lean-forward="false" selection-start-line="30" selection-start-column="36" selection-end-line="30" selection-end-column="36" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -74,14 +97,12 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Language.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Language.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/verlierer/Language.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="19" column="31" lean-forward="true" selection-start-line="19" selection-start-column="31" selection-end-line="19" selection-end-column="31" />
+            <state relative-caret-position="-238">
+              <caret line="19" column="31" lean-forward="false" selection-start-line="19" selection-start-column="31" selection-end-line="19" selection-end-column="31" />
               <folding>
-                <element signature="e#424#432#0" expanded="true" />
-                <element signature="e#493#501#0" expanded="true" />
                 <element signature="e#1471#1472#0" expanded="true" />
                 <element signature="e#1506#1507#0" expanded="true" />
                 <element signature="e#1563#1564#0" expanded="true" />
@@ -134,8 +155,8 @@
       <file leaf-file-name="Japanese.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/verlierer/Japanese.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="21" lean-forward="false" selection-start-line="2" selection-start-column="21" selection-end-line="2" selection-end-column="21" />
+            <state relative-caret-position="45">
+              <caret line="3" column="21" lean-forward="false" selection-start-line="3" selection-start-column="21" selection-end-line="3" selection-end-column="21" />
               <folding />
             </state>
           </provider>
@@ -896,12 +917,12 @@
       <workItem from="1512071690470" duration="44000" />
       <workItem from="1512076712873" duration="484000" />
       <workItem from="1512347559301" duration="3480000" />
-      <workItem from="1512961646399" duration="13363000" />
+      <workItem from="1512961646399" duration="13414000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="26729000" />
+    <option name="totallyTimeSpent" value="26780000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="280" y="52" width="1198" height="706" extended-state="0" />
@@ -1176,43 +1197,43 @@
         <state relative-caret-position="300">
           <caret line="20" column="10" lean-forward="false" selection-start-line="20" selection-start-column="10" selection-end-line="20" selection-end-column="10" />
           <folding>
-            <marker date="1513289737000" expanded="true" signature="77708:77725" ph="..." />
-            <marker date="1513289737000" expanded="true" signature="77708:77743" ph="..." />
-            <marker date="1513289737000" expanded="true" signature="77708:77756" ph="..." />
-            <marker date="1513289737000" expanded="true" signature="77708:77771" ph="..." />
-            <marker date="1513289737000" expanded="true" signature="77708:77725" ph="..." />
-            <marker date="1513289737000" expanded="true" signature="77806:79987" ph="..." />
-            <marker date="1513289737000" expanded="true" signature="77819:79972" ph="..." />
-            <marker date="1513289737000" expanded="true" signature="77873:78168" ph="..." />
-            <marker date="1513289737000" expanded="true" signature="77892:78153" ph="..." />
-            <marker date="1513289737000" expanded="true" signature="77955:78133" ph="..." />
-            <marker date="1513289737000" expanded="true" signature="77995:78099" ph="..." />
-            <marker date="1513289737000" expanded="true" signature="78016:78077" ph="..." />
-            <marker date="1513289737000" expanded="true" signature="78218:78545" ph="..." />
-            <marker date="1513289737000" expanded="true" signature="78237:78530" ph="..." />
-            <marker date="1513289737000" expanded="true" signature="78332:78510" ph="..." />
-            <marker date="1513289737000" expanded="true" signature="78372:78476" ph="..." />
-            <marker date="1513289737000" expanded="true" signature="78393:78454" ph="..." />
-            <marker date="1513289737000" expanded="true" signature="78596:78861" ph="..." />
-            <marker date="1513289737000" expanded="true" signature="78615:78846" ph="..." />
-            <marker date="1513289737000" expanded="true" signature="78648:78826" ph="..." />
-            <marker date="1513289737000" expanded="true" signature="78688:78792" ph="..." />
-            <marker date="1513289737000" expanded="true" signature="78709:78770" ph="..." />
-            <marker date="1513289737000" expanded="true" signature="78904:79210" ph="..." />
-            <marker date="1513289737000" expanded="true" signature="78923:79195" ph="..." />
-            <marker date="1513289737000" expanded="true" signature="78997:79175" ph="..." />
-            <marker date="1513289737000" expanded="true" signature="79037:79141" ph="..." />
-            <marker date="1513289737000" expanded="true" signature="79058:79119" ph="..." />
-            <marker date="1513289737000" expanded="true" signature="79261:79579" ph="..." />
-            <marker date="1513289737000" expanded="true" signature="79280:79564" ph="..." />
-            <marker date="1513289737000" expanded="true" signature="79366:79544" ph="..." />
-            <marker date="1513289737000" expanded="true" signature="79406:79510" ph="..." />
-            <marker date="1513289737000" expanded="true" signature="79427:79488" ph="..." />
-            <marker date="1513289737000" expanded="true" signature="79631:79958" ph="..." />
-            <marker date="1513289737000" expanded="true" signature="79650:79943" ph="..." />
-            <marker date="1513289737000" expanded="true" signature="79745:79923" ph="..." />
-            <marker date="1513289737000" expanded="true" signature="79785:79889" ph="..." />
-            <marker date="1513289737000" expanded="true" signature="79806:79867" ph="..." />
+            <marker date="1513289752000" expanded="true" signature="77716:77733" ph="..." />
+            <marker date="1513289752000" expanded="true" signature="77716:77751" ph="..." />
+            <marker date="1513289752000" expanded="true" signature="77716:77764" ph="..." />
+            <marker date="1513289752000" expanded="true" signature="77716:77779" ph="..." />
+            <marker date="1513289752000" expanded="true" signature="77716:77733" ph="..." />
+            <marker date="1513289752000" expanded="true" signature="77814:79995" ph="..." />
+            <marker date="1513289752000" expanded="true" signature="77827:79980" ph="..." />
+            <marker date="1513289752000" expanded="true" signature="77881:78176" ph="..." />
+            <marker date="1513289752000" expanded="true" signature="77900:78161" ph="..." />
+            <marker date="1513289752000" expanded="true" signature="77963:78141" ph="..." />
+            <marker date="1513289752000" expanded="true" signature="78003:78107" ph="..." />
+            <marker date="1513289752000" expanded="true" signature="78024:78085" ph="..." />
+            <marker date="1513289752000" expanded="true" signature="78226:78553" ph="..." />
+            <marker date="1513289752000" expanded="true" signature="78245:78538" ph="..." />
+            <marker date="1513289752000" expanded="true" signature="78340:78518" ph="..." />
+            <marker date="1513289752000" expanded="true" signature="78380:78484" ph="..." />
+            <marker date="1513289752000" expanded="true" signature="78401:78462" ph="..." />
+            <marker date="1513289752000" expanded="true" signature="78604:78869" ph="..." />
+            <marker date="1513289752000" expanded="true" signature="78623:78854" ph="..." />
+            <marker date="1513289752000" expanded="true" signature="78656:78834" ph="..." />
+            <marker date="1513289752000" expanded="true" signature="78696:78800" ph="..." />
+            <marker date="1513289752000" expanded="true" signature="78717:78778" ph="..." />
+            <marker date="1513289752000" expanded="true" signature="78912:79218" ph="..." />
+            <marker date="1513289752000" expanded="true" signature="78931:79203" ph="..." />
+            <marker date="1513289752000" expanded="true" signature="79005:79183" ph="..." />
+            <marker date="1513289752000" expanded="true" signature="79045:79149" ph="..." />
+            <marker date="1513289752000" expanded="true" signature="79066:79127" ph="..." />
+            <marker date="1513289752000" expanded="true" signature="79269:79587" ph="..." />
+            <marker date="1513289752000" expanded="true" signature="79288:79572" ph="..." />
+            <marker date="1513289752000" expanded="true" signature="79374:79552" ph="..." />
+            <marker date="1513289752000" expanded="true" signature="79414:79518" ph="..." />
+            <marker date="1513289752000" expanded="true" signature="79435:79496" ph="..." />
+            <marker date="1513289752000" expanded="true" signature="79639:79966" ph="..." />
+            <marker date="1513289752000" expanded="true" signature="79658:79951" ph="..." />
+            <marker date="1513289752000" expanded="true" signature="79753:79931" ph="..." />
+            <marker date="1513289752000" expanded="true" signature="79793:79897" ph="..." />
+            <marker date="1513289752000" expanded="true" signature="79814:79875" ph="..." />
           </folding>
         </state>
       </provider>
@@ -1339,25 +1360,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/verlierer/Language.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="19" column="31" lean-forward="true" selection-start-line="19" selection-start-column="31" selection-end-line="19" selection-end-column="31" />
-          <folding>
-            <element signature="e#424#432#0" expanded="true" />
-            <element signature="e#493#501#0" expanded="true" />
-            <element signature="e#1471#1472#0" expanded="true" />
-            <element signature="e#1506#1507#0" expanded="true" />
-            <element signature="e#1563#1564#0" expanded="true" />
-            <element signature="e#1605#1606#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/verlierer/Japanese.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="21" lean-forward="false" selection-start-line="2" selection-start-column="21" selection-end-line="2" selection-end-column="21" />
+        <state relative-caret-position="45">
+          <caret line="3" column="21" lean-forward="false" selection-start-line="3" selection-start-column="21" selection-end-line="3" selection-end-column="21" />
           <folding />
         </state>
       </provider>
@@ -1403,7 +1409,7 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/verlierer/Plot.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
-          <caret line="15" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+          <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
           <folding>
             <element signature="e#135#136#0" expanded="true" />
             <element signature="e#164#165#0" expanded="true" />
@@ -1416,9 +1422,22 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/verlierer/Paragraph.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="182">
-          <caret line="30" column="36" lean-forward="true" selection-start-line="30" selection-start-column="36" selection-end-line="30" selection-end-column="36" />
+          <caret line="30" column="36" lean-forward="false" selection-start-line="30" selection-start-column="36" selection-end-line="30" selection-end-column="36" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/verlierer/Language.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-238">
+          <caret line="19" column="31" lean-forward="false" selection-start-line="19" selection-start-column="31" selection-end-line="19" selection-end-column="31" />
+          <folding>
+            <element signature="e#1471#1472#0" expanded="true" />
+            <element signature="e#1506#1507#0" expanded="true" />
+            <element signature="e#1563#1564#0" expanded="true" />
+            <element signature="e#1605#1606#0" expanded="true" />
           </folding>
         </state>
       </provider>
