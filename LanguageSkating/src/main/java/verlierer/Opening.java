@@ -11,7 +11,7 @@ import java.awt.event.*;
 public class Opening extends GCompound {
     Bios bio = new Bios();
     GImage germany = new Germany().appearance;
-    GImage japan = new GImage("japan.png");
+    GImage japan = new Japan().appearance;
     GImage china = new GImage("china.png");
     GImage spain = new GImage("spain.png");
     Paragraph yo = new Paragraph(30, bio.getBio("germany"));

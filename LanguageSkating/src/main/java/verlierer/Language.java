@@ -2,7 +2,7 @@ package verlierer;
 import java.util.*;
 
 public abstract class Language {
-
+    String languageName;
     public static String[] words = new String[] {"Hello", "Goodbye", "Yes",
             "No", "Thanks", "Good", "Bad", "Not", "Happy",
             "Sad", "Who", "What", "When", "Where", "Why", "How"};
@@ -12,23 +12,6 @@ public abstract class Language {
     public ArrayList<String> learnedWords = new ArrayList<String>();
 
     public abstract Character createCharacter();
-    /*public Language setLanguage(String s){
-        if (s.equals("germany")){
-            return new German();
-        }
-        else if (s.equals("japan")){
-            return new Japan();
-        }
-        else if (s.equals("china")){
-            return new China();
-        }
-        else if (s.equals("spain")){
-            return new Spain();
-        }
-        else{
-            return null;
-        }
-    }*/
 
     public void genRandList() {
         for (int i=0; i<3; i++) {
@@ -53,4 +36,5 @@ public abstract class Language {
 
     public abstract ArrayList<String> getWordList();
 
+    public String getLanguageName(){return languageName;}
 }

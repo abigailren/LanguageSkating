@@ -1,13 +1,13 @@
 package verlierer;
 import acm.graphics.*;
 
-public class Germany implements Character {
+public class Japan implements Character{
     GImage appearance;
     GLabel bio;
 
-    public Germany(){
-        appearance = new GImage("German.png");
-        bio = new GLabel(new Bios().getBio("germany"));
+    public Japan(){
+        appearance = new GImage("Japan.png");
+        bio = new GLabel(new Bios().getBio("japan"));
     }
 
     public GImage getAppearance() {
@@ -17,6 +17,5 @@ public class Germany implements Character {
     public GLabel getSummary() {
         return bio;
     }
-
-
 }
+

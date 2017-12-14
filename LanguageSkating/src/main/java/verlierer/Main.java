@@ -37,7 +37,7 @@ public class Main extends GraphicsProgram{
         englishWords = language.getLearnedEnglishWords();
         learnedWords = language.getLearnedWords();
         add(new GLabel("English",100,70));
-        add(new GLabel("German",200,70));
+        add(new GLabel(language.getLanguageName(),200,70));
         for (int i = 0; i< 3; i++) {
             add(new GLabel(englishWords.get(i)), 100, i * 20 + 100);
             add(new GLabel(learnedWords.get(i)), 200, i * 20 + 100);
@@ -48,25 +48,20 @@ public class Main extends GraphicsProgram{
         GPoint last = new GPoint(e.getPoint());
         gobj = getElementAt(last);
         if (gobj.equals(open.germany)) {
-            selection="germany";//add(new Germany().getSummary(), 50, 300);
+            selection="germany";
             System.out.println(selection);
-            //removeAll();
         }
         else if (gobj.equals(open.japan)) {
-            add(new GLabel("Yo", 250, 300));
             selection="japan";
             System.out.println(selection);
-            //removeAll();
         } else if (gobj.equals(open.china)) {
             add(new GLabel("Yolo", 450, 300));
             selection="china";
             System.out.println(selection);
-            //removeAll();
         } else if (gobj.equals(open.spain)) {
             add(new GLabel("Lol", 650, 300));
             selection="spain";
             System.out.println(selection);
-            //removeAll();
         }
 
     }
@@ -110,9 +105,9 @@ public class Main extends GraphicsProgram{
         if (s.equals("germany")){
             return new German();
         }
-        /*else if (s.equals("japan")){
-            return new Japan();
-        }
+        else if (s.equals("japan")){
+            return new Japanese();
+        }/*
         else if (s.equals("china")){
             return new China();
         }
