@@ -14,25 +14,31 @@ public class Opening extends GraphicsProgram {
     GImage japan = new GImage("japan.png");
     GImage china = new GImage("china.png");
     GImage spain = new GImage("spain.png");
-    GLabel yo = new GLabel(bio.getBio("germany"), 50, 300);
-    GLabel yo1 = new GLabel(bio.getBio("japan"), 250, 300);
-    GLabel yo2 = new GLabel(bio.getBio("china"), 450, 300);
-    GLabel yo3 = new GLabel(bio.getBio("spain"), 650, 300);
+    Paragraph yo = new Paragraph(30, bio.getBio("germany"));
+    Paragraph yo1 = new Paragraph(30,bio.getBio("japan"));
+    Paragraph yo2 = new Paragraph(30,bio.getBio("china"));
+    Paragraph yo3 = new Paragraph(30,bio.getBio("spain"));
     private GObject gobj;
+    String selection="";
 
 
     public static void main(String[] args) {
         new Opening().start(args);
     }
     public void run(){
-        init();
+        if (selection!=null){
+
+        }
     }
     public void init() {
-        germany.scale(.5, .5);
-        japan.scale(.5, .5);
-        china.scale(.5, .5);
-        spain.scale(.5, .5);
-
+        germany.setSize(150, 300);
+        japan.setSize(150, 300);
+        china.setSize(150, 300);
+        spain.setSize(150, 300);
+        yo.move(50,100);
+        yo1.move(250,100);
+        yo2.move(450,100);
+        yo3.move(650,100);
         add(germany, 50, 100);
         add(japan, 250, 100);
         add(china, 450, 100);
@@ -40,6 +46,11 @@ public class Opening extends GraphicsProgram {
         addMouseListeners();
         println("かああああああ");
 
+
+
+    }
+
+    public Language getSelection(){
 
     }
 
@@ -51,10 +62,13 @@ public class Opening extends GraphicsProgram {
         }
         else if (gobj.equals(japan)) {
             add(new GLabel("Yo", 250, 300));
+            selection="Japan";
         } else if (gobj.equals(china)) {
             add(new GLabel("Yolo", 450, 300));
+            selection="China";
         } else if (gobj.equals(spain)) {
             add(new GLabel("Lol", 650, 300));
+            selection="Spain";
         }
     }
 
@@ -76,7 +90,9 @@ public class Opening extends GraphicsProgram {
                     remove(yo3);
                 } else {
                     if (gobj.equals(germany)) {
+
                         add(yo);
+
                     } else if (gobj.equals(japan)) {
                         add(yo1);
                     } else if (gobj.equals(china)) {
