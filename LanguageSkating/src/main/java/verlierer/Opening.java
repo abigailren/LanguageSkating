@@ -14,10 +14,10 @@ public class Opening extends GCompound {
     GImage japan = new Japan().appearance;
     GImage china = new GImage("china.png");
     GImage spain = new GImage("spain.png");
-    Paragraph yo = new Paragraph(30, bio.getBio("germany"));
-    Paragraph yo1 = new Paragraph(30,bio.getBio("japan"));
-    Paragraph yo2 = new Paragraph(30,bio.getBio("china"));
-    Paragraph yo3 = new Paragraph(30,bio.getBio("spain"));
+    Paragraph germanyBio = new Paragraph(30, bio.getBio("germany"));
+    Paragraph japanBio = new Paragraph(30,bio.getBio("japan"));
+    Paragraph chinaBio = new Paragraph(30,bio.getBio("china"));
+    Paragraph spainBio = new Paragraph(30,bio.getBio("spain"));
     private GObject gobj;
     String selection="";
 
@@ -26,10 +26,10 @@ public class Opening extends GCompound {
         japan.setSize(150, 300);
         china.setSize(150, 300);
         spain.setSize(150, 300);
-        yo.move(50,100);
-        yo1.move(250,100);
-        yo2.move(450,100);
-        yo3.move(650,100);
+        germanyBio.move(50,100);
+        japanBio.move(250,100);
+        chinaBio.move(450,100);
+        spainBio.move(650,100);
         add(germany, 50, 100);
         add(japan, 250, 100);
         add(china, 450, 100);
@@ -42,7 +42,7 @@ public class Opening extends GCompound {
         if (selection!=null){
 
         }
-    }
+    }/*
     public void init() {
         germany.setSize(150, 300);
         japan.setSize(150, 300);
@@ -61,7 +61,7 @@ public class Opening extends GCompound {
 
 
 
-    }
+    }*/
 /*
 
     public void mouseClicked(MouseEvent e) {

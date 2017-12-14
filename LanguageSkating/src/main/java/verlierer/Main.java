@@ -17,6 +17,8 @@ public class Main extends GraphicsProgram{
     }
 
     public void run(){
+
+        setBounds(0,0,1000,800);
         /*Language language = new German();
         ArrayList<String> wordList = language.genRandList();
         System.out.println(wordList.get(0));*/
@@ -36,29 +38,37 @@ public class Main extends GraphicsProgram{
         language.genRandList();
         englishWords = language.getLearnedEnglishWords();
         learnedWords = language.getLearnedWords();
-        add(new GLabel("English",100,70));
-        add(new GLabel(language.getLanguageName(),200,70));
+        GLabel english = new GLabel("English",50,100);
+        english.setFont("*-*-60");
+        add(english);
+        GLabel foreign = new GLabel(language.getLanguageName(),350,100);
+        foreign.setFont("*-*-60");
+        add(foreign);
         for (int i = 0; i< 3; i++) {
-            add(new GLabel(englishWords.get(i)), 100, i * 20 + 100);
-            add(new GLabel(learnedWords.get(i)), 200, i * 20 + 100);
+            GLabel engWord = new GLabel(englishWords.get(i));
+            GLabel foreignWord = new GLabel(learnedWords.get(i));
+            engWord.setFont("*-*-40");
+            add(engWord, 50, i * 70 + 170);
+            foreignWord.setFont("*-*-40");
+            add(foreignWord, 350, i * 70 + 170);
         }
     }
 
     public void mouseClicked(MouseEvent e) {
         GPoint last = new GPoint(e.getPoint());
         gobj = getElementAt(last);
-        if (gobj.equals(open.germany)) {
+        if (gobj.equals(open.germany)||gobj.equals(open.germanyBio)) {
             selection="germany";
             System.out.println(selection);
         }
-        else if (gobj.equals(open.japan)) {
+        else if (gobj.equals(open.japan)||gobj.equals(open.japanBio)) {
             selection="japan";
             System.out.println(selection);
-        } else if (gobj.equals(open.china)) {
+        } else if (gobj.equals(open.china)||gobj.equals(open.chinaBio)) {
             add(new GLabel("Yolo", 450, 300));
             selection="china";
             System.out.println(selection);
-        } else if (gobj.equals(open.spain)) {
+        } else if (gobj.equals(open.spain)||gobj.equals(open.spainBio)) {
             add(new GLabel("Lol", 650, 300));
             selection="spain";
             System.out.println(selection);
@@ -68,31 +78,31 @@ public class Main extends GraphicsProgram{
 
     public void mouseMoved(MouseEvent e) {
         if (e == null) {
-            remove(open.yo);
-            remove(open.yo1);
-            remove(open.yo2);
-            remove(open.yo3);
+            remove(open.germanyBio);
+            remove(open.japanBio);
+            remove(open.chinaBio);
+            remove(open.spainBio);
         } else {
             GPoint last = new GPoint(e.getPoint());
             if (last != null) {
 
                 gobj = getElementAt(last);
                 if (gobj == null) {
-                    remove(open.yo);
-                    remove(open.yo1);
-                    remove(open.yo2);
-                    remove(open.yo3);
+                    remove(open.germanyBio);
+                    remove(open.japanBio);
+                    remove(open.chinaBio);
+                    remove(open.spainBio);
                 } else {
                     if (gobj.equals(open.germany)) {
 
-                        add(open.yo);
+                        add(open.germanyBio);
 
                     } else if (gobj.equals(open.japan)) {
-                        add(open.yo1);
+                        add(open.japanBio);
                     } else if (gobj.equals(open.china)) {
-                        add(open.yo2);
+                        add(open.chinaBio);
                     } else if (gobj.equals(open.spain)) {
-                        add(open.yo3);
+                        add(open.spainBio);
                     }
                 }
             }
@@ -107,13 +117,13 @@ public class Main extends GraphicsProgram{
         }
         else if (s.equals("japan")){
             return new Japanese();
-        }/*
+        }
         else if (s.equals("china")){
-            return new China();
+            return new Chinese();
         }
         else if (s.equals("spain")){
-            return new Spain();
-        }*/
+            return new Spanish();
+        }
         else{
             return null;
         }
