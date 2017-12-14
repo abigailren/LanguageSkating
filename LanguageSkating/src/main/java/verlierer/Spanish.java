@@ -6,7 +6,7 @@ public class Spanish extends Language{
      "No", "Gracias", "Bueno/a", "Malo/a", "No", "contento/a", 
      "triste", "Qui\u00E9n", "Qu\u00E9", "Cuando", "Donde", "Por Qu\u00E9", "C\u00F3mo"};
 
-    public  ArrayList<String> spainshWordList = new ArrayList(Arrays.asList(wordArray));
+    public  ArrayList<String> spanishWordList = new ArrayList(Arrays.asList(wordArray));
 
     public Spanish(){
 

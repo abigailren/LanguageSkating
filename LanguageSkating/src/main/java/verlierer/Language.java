@@ -30,7 +30,7 @@ public abstract class Language {
         }
     }*/
 
-    public void genRandList() {
+    public ArrayList<String> genRandList() {
         for (int i=0; i<3; i++) {
             Random rand = new Random();
             int  n = rand.nextInt(wordList.size());
@@ -41,14 +41,7 @@ public abstract class Language {
             learnedWords.add(getWordList().get(n));
             getWordList().remove(n);
         }
-    }
-
-    public ArrayList<String> getLearnedWords(){
         return learnedWords;
-    }
-
-    public ArrayList<String> getLearnedEnglishWords() {
-        return learnedEnglishWords;
     }
 
     public abstract ArrayList<String> getWordList();
