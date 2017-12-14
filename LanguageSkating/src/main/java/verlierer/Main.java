@@ -9,6 +9,8 @@ public class Main extends GraphicsProgram{
     private GObject gobj;
     String selection;
     Opening open = new Opening();
+    ArrayList<String> englishWords = new ArrayList<String>();
+    ArrayList<String> learnedWords = new ArrayList<String>();
 
     public static void main(String[] args){
         new Main().start(args);
@@ -31,10 +33,15 @@ public class Main extends GraphicsProgram{
         //    removeAll();
         //}
         Language language = setLanguage(selection);
-        ArrayList<String> wordList = language.genRandList();
-        System.out.println(wordList.get(0));
-
-
+        language.genRandList();
+        englishWords = language.getLearnedEnglishWords();
+        learnedWords = language.getLearnedWords();
+        add(new GLabel("English",100,70));
+        add(new GLabel("German",200,70));
+        for (int i = 0; i< 3; i++) {
+            add(new GLabel(englishWords.get(i)), 100, i * 20 + 100);
+            add(new GLabel(learnedWords.get(i)), 200, i * 20 + 100);
+        }
     }
 
     public void mouseClicked(MouseEvent e) {
