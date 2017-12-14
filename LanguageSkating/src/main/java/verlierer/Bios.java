@@ -16,7 +16,8 @@ public class Bios {
             + "is looking to be the first male skater in decades to win  consecutive \n"
             + "gold. Currently in his prime years in name in the history of skating \n"
             + "before he reaches the end of his peak as a top figure skater and is \n"
-            + "entering the competition with high expectations. \n"
+            + "entering the competition with high expectations.";
+    /*
             + "Personality: Basically a smug bastard who’s not super in your face  \n"
             + "about his accomplishments but won’t fail to remind you that he’s  \n"
             + "better at skating than you. Super carefree, friendly, cheerful,  \n"
@@ -28,7 +29,7 @@ public class Bios {
             + "fans and the press in a way that makes him look humble, composed  \n"
             + "and considerate which makes him a douche to other skaters because   \n"
             + "they sometimes look bad if they don’t like Japan even though he \n"
-            + "treats them completely differently from how he treats the general public. \n";
+            + "treats them completely differently from how he treats the general public. \n";*/
 
     public String spainBio = "Spain McSpainFace is the clear underdog of the skating community, "
             + "who shot\nto fame by winning last year's worlds"
@@ -40,7 +41,8 @@ public class Bios {
     public String chinaBio = "China McChinaFace, who won his first worlds this year at just 16, " +
             "is looking\nto repeat his stellar performance last year and take the a medal again this\nyear. " +
             "There was a scary moment about a month back when an ankle injury\nthreatened to keep him from " +
-            "the Olympic games, but he has persevered and\nshows no hesitation in his warmups here tonight. " +
+            "the Olympic games, but he has persevered and\nshows no hesitation in his warmups here tonight.";
+    /*
             "Personality: A small ball\nof fluff that is doing his best to act serious and grumpy to get " +
             "taken\nseriously but rarely ever is because people can generally see through him.\nReally " +
             "loves having fun in reality and gets anxious about the expectations\non him and thinks no " +
@@ -50,14 +52,13 @@ public class Bios {
             "always making fun of him.\nOverall just really wants to do his best and prove himself to " +
             "the world and\nhis peers but also scared of failing and making a fool out of himself.\n" +
             "He’s a lot more confident on the ice and tends to have fun, charming skating\npersona " +
-            "because he forgets about his worries and just really loves skating??\n";
+            "because he forgets about his worries and just really loves skating??\n";*/
 
     public String germanyBio = "Among this year's top contenders is German McGermanFace, " +
-            "a three-time olympic\nsilver winner, who is competing once again against Japan McJapanFace, " +
-            "who beat\nhim for gold in the last Winter Olympics. Whilst he may not have any olympic\n" +
+            "a three-time olympic\nsilver winner. Whilst he may not have any olympic\n" +
             "golds and is the oldest on the rink, McGermanFace has won more gold medals in\nthe worlds " +
-            "than the others combined, due to his 5 year gold streak in his early\n20’s, still leaving " +
-            "him amongst the top skaters in the world. However, with this\nbeing his 4th Olympics and " +
+            "than the others combined, due to his 5 year gold streak in his early\n20’s. " +
+            "However, with this\nbeing his 4th Olympics and " +
             "him rapidly approaching his 30’s, this would seem to\nbe his last chance at that olympic " +
             "gold he’s never quite achieved.\n";
 
