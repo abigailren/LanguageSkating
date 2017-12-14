@@ -13,6 +13,5 @@ public class Main extends GraphicsProgram{
     public void run(){
         Opening open = new Opening();
         open.main(null);
-        open.main(null);
     }
 }

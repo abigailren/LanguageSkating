@@ -50,9 +50,6 @@ public class Opening extends GraphicsProgram {
 
     }
 
-    public Language getSelection(){
-
-    }
 
     public void mouseClicked(MouseEvent e) {
         GPoint last = new GPoint(e.getPoint());
