@@ -16,5 +16,8 @@ public class German extends Language{
         return new Germany();
     }
 
-
+    @Override
+    public ArrayList<String> getWordList() {
+        return germanWordList;
+    }
 }
