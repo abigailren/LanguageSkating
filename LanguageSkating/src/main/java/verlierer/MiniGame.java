@@ -11,12 +11,18 @@ import java.awt.event.MouseEvent;
 import java.awt.event.KeyListener;
 import java.util.List;
 
-//The minigame
 
 public class MiniGame extends GraphicsProgram{
 
 
-    //The GOvals for the checkpoints needed in the game
+    /**
+     * The GOvals for the checkpoints needed in the game.
+     * The GObject is the image of the skater that is controlled by the player.
+     * The Gimage is used for the background image that resembles an ice skating rink.
+     * The GRect is for the pop-up question box that holds the questions on the language for the player.
+     * The language chosen at the beginning will be continued in the minigame.
+     * The final GLabel is created as the correct answer to the question in the popup box.
+     */
     private GOval checkpoint1, checkpoint2;
     private final GObject skater;
     private final GImage rink;
@@ -26,8 +32,11 @@ public class MiniGame extends GraphicsProgram{
     GLabel answer;
 
 
-
-
+    /**
+     * We call MiniGame() in order to declare what the images for the skater and the rink are
+     * and declare the language that will be used throughout.
+     * It also declares the coordinates for rink.
+     */
     public MiniGame() {
         this.skater = new GImage("skaterIcon.png");
         this.rink = new GImage("rink.png",0,0);
@@ -40,20 +49,23 @@ public class MiniGame extends GraphicsProgram{
      *
      * Invoked by the start method in main,
      * causes execution to continue from here.
+     *
+     * 5 checkpoints should be reached in order to finish.
+     * setUpGame() called before the game is run, so that the background image
+     * of the ice rink is uploaded before the game is started.
+     * Everytime that the player has not yet reached 5 checkpoints run the game again.
+     * Each time the game runs again it has to reach one less checkpoint in total than in the round before.
+     *
+     * Once the player has to reach no more check points a message appears, congratulating them for finishing
+     * When the message appears the skater disappears and after a mouse click the message does as well.
+     *
      */
-
     public void run () {
-        //5 checkpoints should be reached in order to finish.
         int checkpoints = 5;
-        //setUpGame() called before the game is run, so that the background image
-        //of the ice rink is uploaded before the game is started
         setUpGame();
-        //everytime that the player has not yet reached 5 checkpoints run the game
         for(int i = 0; i < checkpoints; i++){
             runGame();
         }
-//next count how many checkpoints have been passed, if it has reached 5 then the skater has finished
-
         GLabel victoryMessage =
                 new GLabel("YOU MADE IT!", 100, 300);
         victoryMessage.setFont("SansSerif-36");
@@ -62,22 +74,18 @@ public class MiniGame extends GraphicsProgram{
         skater.setVisible(false);
         waitForClick();
         victoryMessage.setVisible(false);
-
     }
-    //if 30 seconds have gone by and the skater hasn't moved then game over
-    //A message is displayed saying game over
 
 
     /**
      * setUpGame:
-     *
-     * Called by the run method to set up the initial scene.
-     * Creates the background image and adds KeyListeners
+     * Add  rink as the background image, and sets the size of the rink to be equal to the window
+     * Rink is sent to the back so that it doesn't interfer.
+     * Add keyListeners.
+     * Add a GLabel asking the player if they are ready and once they click the skater appears in the top left corner,
+     * starting the game for the player.
      */
     private void setUpGame() {
-        //set rink as the background image, and set the location at the origin
-        //as the size of the image rink is the same as that of the application
-        // in order to cover the the full background
         add(rink);
         rink.setSize(1000,800);
         rink.sendToBack();
@@ -89,7 +97,6 @@ public class MiniGame extends GraphicsProgram{
                 skateAlong(e);
             }
         });*/
-        //skater starts in center
         GLabel getReady =
                 new GLabel("Are You Ready?", 100, 300);
         getReady.setFont("SansSerif-36");
@@ -101,13 +108,23 @@ public class MiniGame extends GraphicsProgram{
     }
 
 
+    /**
+     * The runGame method calls two other methods, one to position the checkpoints on the rink
+     * and one to find out when the task has been achieved.
+     */
     private void runGame(){
-
         setCheckpoints();
         letsSkate();
-
     }
 
+
+    /**
+     * The letsSkate method has a while loop that checks for whether or not the skater is still in the game
+     * In order to break out from the loop and therefore from the game running the skater has to reach or
+     * pass by the point from checkpoint 2.
+     * Once it reaches checkpoint 2 the checkpoints disappear, the questionTime method is called and
+     * once it is also completed we can break out of the while loop and complete a round of the game.
+     */
     private void letsSkate(){
         while(skatingAlong = true){
             double c2x = checkpoint2.getX();
@@ -123,19 +140,38 @@ public class MiniGame extends GraphicsProgram{
         }
     }
 
+    /**
+     * The questionTime method calls a method to create a pop-up box for the question to be in
+     * and a method to add the question to that box.
+     */
     private void questionTime() {
         createQuestionBox();
         addQuestion();
 
     }
 
-     private void createQuestionBox(){
+    /**
+     * The createQuestionBox method creates a GRect that fills up roughly half of the screen and
+     * is filled out in white.
+     */
+    private void createQuestionBox(){
         questionBox = new GRect(250, 200, 500, 400);
         questionBox.setFilled(true);
         questionBox.setFillColor(Color.white);
         add(questionBox);
     }
-        private void addQuestion(){
+
+    /**
+     * The addQuestion method creates the multiple choice question for the player based on
+     * the language they chose in the beginning.
+     * It creates a GLabel that prints out the question in black from one of the words from our list.
+     * Then we have a for loop in order to randomize the location of the correct answer,
+     * the correctly translated from english into the chosen language will be surrounded by three other possible,
+     * yet incorrect answers and the player has to click one of the answers.
+     * If it clicks the correct answer he is supposed to be awarded points,
+     * but will be able to continue the game regarless of whether they choose the right or wrong answer.
+     */
+    private void addQuestion(){
             Question question = new Question(language);
             GLabel qImage = new GLabel(question.printQuestion(), 300, 250);
             qImage.setFont("*-*-30");
@@ -157,40 +193,56 @@ public class MiniGame extends GraphicsProgram{
             }
         }
 
+    /**
+     * The createCheckpoint method creates a temporary checkpoint that is taken over after as checkpoints 1 and 2,
+     * it is created in order to keep the the same qualities for each checkpoint.
+     * @return
+     */
     private GOval createCheckpoint(){
         GOval tempCheckpoint =  new GOval(20,20);
         tempCheckpoint.setFilled(true);
-        tempCheckpoint.setColor(Color.YELLOW);
         return tempCheckpoint;
-
     }
 
+    /**
+     * The setCheckpoints method adds the checkpoints to the game.
+     * We find the X and Y coordinates of the skater and use a random generator to calculate
+     * a random X and random Y coordinate.
+     * The randomized coordinates are choosen from between any X and Y values that are at least
+     * 100 pixels from the borders of the application window.
+     * The createCheckpoint method is called in order to create both checkpoints 1 and 2.
+     * Checkpoint 1 is filled out in red and Checkpoint 2 is filled out in yellow in order to to distinguish them.
+     * Then the checkpoints are added to the game, checkpoint 1 is placed below right where the skater is,
+     * and checkpoint 2 is added at the randomized coordinates.
+     */
     private void setCheckpoints(){
-        //find the location of the skater
-
-        RandomGenerator rgen;
-        double randyX;
-        double randyY;
         double skaterX = skater.getX();
         double skaterY = skater.getY();
-        //find a random
+        double randyX;
+        double randyY;
+        RandomGenerator rgen;
         rgen = new RandomGenerator();
         randyX = rgen.nextDouble(100,900);
         randyY = rgen.nextDouble(100,700);
-
         checkpoint1 = createCheckpoint();
         checkpoint1.setColor(Color.RED);
         checkpoint2 = createCheckpoint();
-
+        checkpoint2.setColor(Color.YELLOW);
         add(checkpoint1,skaterX,skaterY);
         add(checkpoint2,randyX,randyY);
-
-
         //checkpoint1.setLocation(skaterLocation);
         //checkpoint2.setLocation(randyX,randyY);
-
     }
 
+    /**
+     * The KeyListeners are used to call the keyPressed Method in order to control
+     *  the skater with the arrow keys.
+     *  The skaters coordinates are found .
+     *  Switch statements are used for the four cases, up, down, left and right.
+     *  For each the skater is removed, moved by 15 pixels in the correct direction and
+     *  then added again to the rink, folllowing which you can break out of the case.
+     * @param e
+     */
     public void keyPressed(KeyEvent e) {
         double dx = skater.getX();
         double dy = skater.getY();
@@ -236,11 +288,18 @@ public class MiniGame extends GraphicsProgram{
         }
     }*/
 
-
+    /**
+     * The mouseClicked method makes the boolean statement, skatingAlong true.
+     * @param e
+     */
  public void mouseClicked(MouseEvent e) {
      skatingAlong = true;
  }
 
+    /**
+     *The main method calls the miniGame to start.
+     * @param args
+     */
  public static void main(String[] args) {
      new MiniGame().start();
  }
