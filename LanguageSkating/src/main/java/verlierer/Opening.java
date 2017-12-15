@@ -22,7 +22,6 @@ public class Opening extends GCompound {
             "and click on a character to start the game in the language of your choice.";
     Paragraph instructions = new Paragraph(100, instruct);
     private GObject gobj;
-    String selection="";
 
     public Opening(){
         add(instructions,50,50);
@@ -39,85 +38,4 @@ public class Opening extends GCompound {
         add(china, 450, 100);
         add(spain, 650, 100);
     }
-    public static void main(String[] args) {
-        new Opening().start(args);
-    }
-    public void run(){
-        if (selection!=null){
-
-        }
-    }/*
-    public void init() {
-        germany.setSize(150, 300);
-        japan.setSize(150, 300);
-        china.setSize(150, 300);
-        spain.setSize(150, 300);
-        yo.move(50,100);
-        yo1.move(250,100);
-        yo2.move(450,100);
-        yo3.move(650,100);
-        add(germany, 50, 100);
-        add(japan, 250, 100);
-        add(china, 450, 100);
-        add(spain, 650, 100);
-        //addMouseListeners();
-        //println("かああああああ");
-
-
-
-    }*/
-/*
-
-    public void mouseClicked(MouseEvent e) {
-        GPoint last = new GPoint(e.getPoint());
-        gobj = getElementAt(last);
-        if (gobj.equals(germany)) {
-            this.stop();//add(new Germany().getSummary(), 50, 300);
-        }
-        else if (gobj.equals(japan)) {
-            add(new GLabel("Yo", 250, 300));
-            selection="Japan";
-        } else if (gobj.equals(china)) {
-            add(new GLabel("Yolo", 450, 300));
-            selection="China";
-        } else if (gobj.equals(spain)) {
-            add(new GLabel("Lol", 650, 300));
-            selection="Spain";
-        }
-    }
-
-    public void mouseMoved(MouseEvent e) {
-        if (e == null) {
-            remove(yo);
-            remove(yo1);
-            remove(yo2);
-            remove(yo3);
-        } else {
-            GPoint last = new GPoint(e.getPoint());
-            if (last != null) {
-
-                gobj = getElementAt(last);
-                if (gobj == null) {
-                    remove(yo);
-                    remove(yo1);
-                    remove(yo2);
-                    remove(yo3);
-                } else {
-                    if (gobj.equals(germany)) {
-
-                        add(yo);
-
-                    } else if (gobj.equals(japan)) {
-                        add(yo1);
-                    } else if (gobj.equals(china)) {
-                        add(yo2);
-                    } else if (gobj.equals(spain)) {
-                        add(yo3);
-                    }
-                }
-            }
-
-        }
-
-    }*/
 }
