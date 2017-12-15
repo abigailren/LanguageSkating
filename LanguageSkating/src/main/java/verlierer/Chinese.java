@@ -10,10 +10,11 @@ public class Chinese extends Language{
             "\u4ec0\u9ebc\u6642\u5019 (sh\u00E9nme sh\u00EDh\u00F2u)", "\u54ea\u88e1 (n\u01CEl\u01D0)", "\u70ba\u4ec0\u9ebc (w\u00E8ish\u00E9nme)",
             "\u600e\u9ebc\u6a23 (z\u011Bnmey\u00E0ng)"};
 
-    public ArrayList<String> chinaWordList = new ArrayList(Arrays.asList(wordArray));
+    public ArrayList<String> translatedWordList = new ArrayList(Arrays.asList(wordArray));
 
     public Chinese(){
         super.languageName = this.languageName;
+        super.translatedWordList = this.translatedWordList;
     }
 
     public Character createCharacter() {
@@ -22,6 +23,6 @@ public class Chinese extends Language{
 
     @Override
     public ArrayList<String> getWordList() {
-        return chinaWordList;
+        return translatedWordList;
     }
 }
