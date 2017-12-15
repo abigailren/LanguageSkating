@@ -8,10 +8,11 @@ public class Spanish extends Language{
             "No", "Gracias", "Bueno/a", "Malo/a", "No", "Contento/a",
             "Triste", "Qui\u00E9n", "Qu\u00E9", "Cu\u00E1ndo", "D\u00F3nde", "Por Qu\u00E9", "C\u00F3mo"};
 
-    public ArrayList<String> spainWordList = new ArrayList(Arrays.asList(wordArray));
+    public ArrayList<String> translatedWordList = new ArrayList(Arrays.asList(wordArray));
 
     public Spanish(){
         super.languageName = this.languageName;
+        super.translatedWordList = this.translatedWordList;
     }
 
     public Character createCharacter() {
@@ -20,6 +21,6 @@ public class Spanish extends Language{
 
     @Override
     public ArrayList<String> getWordList() {
-        return spainWordList;
+        return translatedWordList;
     }
 }

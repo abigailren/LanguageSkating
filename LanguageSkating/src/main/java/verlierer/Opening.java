@@ -30,10 +30,10 @@ public class Opening extends GCompound {
         japan.setSize(150, 300);
         china.setSize(150, 300);
         spain.setSize(150, 300);
-        germanyBio.move(50,100);
-        japanBio.move(250,100);
-        chinaBio.move(450,100);
-        spainBio.move(650,100);
+        germanyBio.move(50,420);
+        japanBio.move(250,420);
+        chinaBio.move(450,420);
+        spainBio.move(650,420);
         add(germany, 50, 100);
         add(japan, 250, 100);
         add(china, 450, 100);

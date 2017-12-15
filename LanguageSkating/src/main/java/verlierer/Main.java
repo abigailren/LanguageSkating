@@ -19,7 +19,7 @@ public class Main extends GraphicsProgram{
 
     public void run(){
 
-        setBounds(0,0,1000,800);
+        this.setSize(1000,800);
         /*Language language = new German();
         ArrayList<String> wordList = language.genRandList();
         System.out.println(wordList.get(0));*/

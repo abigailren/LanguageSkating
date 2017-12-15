@@ -17,10 +17,11 @@ public class Japanese extends Language{
             "\u3060\u308C (dare)", "\u306A\u306B (nani)", "\u3044\u3064 (itsu)", "\u3069\u3053\u3067 (dokode)",
             "\u3069\u3046\u3057\u3066 (d\u014Dshite)", "\u3069\u3046\u3084\u3063\u3066 (d\u014Dyatte)"};  ;
 
-    public  ArrayList<String> japanWordList = new ArrayList(Arrays.asList(wordArray));
+    public  ArrayList<String> translatedWordList = new ArrayList(Arrays.asList(wordArray));
 
     public Japanese(){
         super.languageName = this.languageName;
+        super.translatedWordList = this.translatedWordList;
     }
 
     public Character createCharacter() {
@@ -29,6 +30,6 @@ public class Japanese extends Language{
 
     @Override
     public ArrayList<String> getWordList() {
-        return japanWordList;
+        return translatedWordList;
     }
 }
