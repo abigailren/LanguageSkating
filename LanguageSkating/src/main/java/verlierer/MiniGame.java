@@ -3,7 +3,8 @@ package verlierer;
 import acm.graphics.*;
 import acm.program.*;
 import java.awt.*;
-import acm.util.RandomGenerator;
+import acm.util.*;
+import java.util.*;
 
 import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
@@ -22,8 +23,12 @@ public class MiniGame extends GraphicsProgram{
     private final GImage rink;
     private boolean skatingAlong;
     private GRect questionBox;
+    private Question question;
     Language language;
     GLabel answer;
+    int score;
+    ArrayList<String> englishWords;
+    ArrayList<String> learnedWords;
 
 
 
@@ -48,6 +53,8 @@ public class MiniGame extends GraphicsProgram{
         //setUpGame() called before the game is run, so that the background image
         //of the ice rink is uploaded before the game is started
         setUpGame();
+
+        addMouseListeners();
         //everytime that the player has not yet reached 5 checkpoints run the game
         for(int i = 0; i < checkpoints; i++){
             runGame();
@@ -60,6 +67,7 @@ public class MiniGame extends GraphicsProgram{
         victoryMessage.setColor(Color.MAGENTA);
         add(victoryMessage);
         skater.setVisible(false);
+        System.out.println("score " +score);
         waitForClick();
         victoryMessage.setVisible(false);
 
@@ -98,6 +106,10 @@ public class MiniGame extends GraphicsProgram{
         waitForClick();
         getReady.setVisible(false);
         add(skater,150, 150);
+        language.genRandList();
+        englishWords = language.getQuizzedEnglishWords();
+        learnedWords = language.getQuizzedWords();
+        score=0;
     }
 
 
@@ -118,6 +130,8 @@ public class MiniGame extends GraphicsProgram{
                 checkpoint1.setVisible(false);
                 checkpoint2.setVisible(false);
                 questionTime();
+
+                waitForClick();
                 break;
             }
         }
@@ -136,25 +150,30 @@ public class MiniGame extends GraphicsProgram{
         add(questionBox);
     }
         private void addQuestion(){
-            Question question = new Question(language);
+
+            question = new Question(language);
+            System.out.println(language.getWordList().size());
             GLabel qImage = new GLabel(question.printQuestion(), 300, 250);
             qImage.setFont("*-*-30");
             qImage.setColor(Color.black);
             qImage.sendToFront();
-            add(qImage);
+            question.add(qImage);
             List<String> words = question.getWords();
             for (int i = 0; i < words.size(); i++) {
                 GLabel randAnswer = new GLabel(words.get(i));
                 randAnswer.setFont("*-*-30");
                 if (i % 2 == 0) {
-                    add(randAnswer, 200, 450 + (i / 2) * 50);
+                    question.add(randAnswer, 200, 450 + (i / 2) * 50);
                 } else {
-                    add(randAnswer, 500, 450 + (i / 2) * 50);
+                    question.add(randAnswer, 500, 450 + (i / 2) * 50);
                 }
                 if (words.get(i).equals(question.getTranslation())) {
                     answer = randAnswer;
                 }
             }
+            englishWords.remove(question.getEnglish());
+            learnedWords.remove(question.getTranslation());
+            add(question);
         }
 
     private GOval createCheckpoint(){
@@ -238,7 +257,20 @@ public class MiniGame extends GraphicsProgram{
 
 
  public void mouseClicked(MouseEvent e) {
-     skatingAlong = true;
+     GPoint last = new GPoint(e.getPoint());
+     GObject gobj = getElementAt(last);
+     if (gobj.equals(answer)) {
+         score+=5;
+         /*GLabel eh = new GLabel("YOU WIN!", 450, 350);
+         eh.setFont("*-*-50");
+         add(eh);
+         */
+     } else {
+         score+=1;
+
+     }
+     remove(question);
+     remove(questionBox);
  }
 
  public static void main(String[] args) {
