@@ -8,7 +8,7 @@ public abstract class Language {
             "Sad", "Who", "What", "When", "Where", "Why", "How"};
 
     ArrayList<String> wordList = new ArrayList(Arrays.asList(words));
-    ArrayList<String> translatedWordList = new ArrayList<String>();
+    ArrayList<String> translatedWordList;
     ArrayList<String> quizzedEnglishWords = new ArrayList<String>();
     ArrayList<String> quizzedWords = new ArrayList<String>();
 
@@ -42,6 +42,11 @@ public abstract class Language {
 
     //abstract method to get translated version of String WORDS from subclass
     public abstract ArrayList<String> getWordList();
+
+    //gets the english list of words wordList
+    public ArrayList<String> getList(){
+        return wordList;
+    }
 
     //returns the name of the language
     public String getLanguageName(){return languageName;}

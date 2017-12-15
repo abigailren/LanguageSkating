@@ -12,7 +12,7 @@ public class Main extends GraphicsProgram{
     ArrayList<String> englishWords = new ArrayList<String>();
     ArrayList<String> learnedWords = new ArrayList<String>();
     GLabel answer;
-    Plot plot = new Plot();
+    Plot plot;
 
 
     public static void main(String[] args){
@@ -40,23 +40,26 @@ public class Main extends GraphicsProgram{
         removeAll();
         //}
         Language language = setLanguage(selection);
-        language.genRandList();
-        englishWords = language.getQuizzedEnglishWords();
-        learnedWords = language.getQuizzedWords();
 
-
-        addScene(plot.scene(plot.firstScene));
+        System.out.println("plot");
+        plot = new Plot(language);
+        System.out.println("plot");
+        addScene(plot.scene(plot.firstScene,20));
         waitForClick();
         removeAll();
-        addScene(plot.scene(plot.secondScene));
+        addScene(plot.scene(plot.secondScene,20));
         waitForClick();
         removeAll();
-        addScene(plot.scene(plot.thirdScene));
+        addScene(plot.scene(plot.thirdScene,20));
         waitForClick();
         removeAll();
         //add(plot);
 
         //for (int )
+
+        language.genRandList();
+        englishWords = language.getQuizzedEnglishWords();
+        learnedWords = language.getQuizzedWords();
          GLabel english = new GLabel("English",50,100);
         english.setFont("*-*-60");
         add(english);
@@ -71,6 +74,7 @@ public class Main extends GraphicsProgram{
             foreignWord.setFont("*-*-40");
             add(foreignWord, 350, i * 70 + 170);
         }
+
         Question question = new Question(language);
         GLabel qImage = new GLabel(question.printQuestion(),200,400);
         qImage.setFont("*-*-30");
@@ -164,13 +168,16 @@ public class Main extends GraphicsProgram{
             return new Spanish();
         }
         else{
-            return null;
+            return new German();
         }
     }
 
     public void addScene(List<Paragraph> scene){
+        int bottomLine = 50;
         for (int i=0;i<scene.size();i++){
-            add(scene.get(i),50,50+i*50);
+            int numLines = scene.get(i).getNumLines();
+            add(scene.get(i),50,bottomLine);
+            bottomLine+=numLines*20+20;
         }
     }
 }

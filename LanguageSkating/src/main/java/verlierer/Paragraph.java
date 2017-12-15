@@ -60,7 +60,7 @@ public class Paragraph extends GCompound {
     private void adjustPositions() {
         for (int i=0; i<lines.length; i++) {
             GLabel label = lines[i];
-            label.move(0, 15*i);
+            label.move(0, 20*i);
             lines[i] = label;
         }
     }
@@ -71,5 +71,12 @@ public class Paragraph extends GCompound {
             if (label!=null) add(label);
         }
     }
+
+    public void setFont(int size){
+        for (int i=0;i<lines.length;i++){
+            lines[i].setFont("*-*-"+size);
+        }
+    }
+    public int getNumLines(){return lines.length;}
     
 }
