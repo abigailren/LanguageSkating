@@ -37,6 +37,7 @@ public class MiniGame extends GraphicsProgram{
     GLabel correct = new GLabel("Correct!", 450, 350);
     GLabel wrong = new GLabel("Wrong!", 450, 350);
     ArrayList<GLabel> answers = new ArrayList<GLabel>();
+    int numQuestions = 0;
 
 
     /**
@@ -230,6 +231,7 @@ public class MiniGame extends GraphicsProgram{
             englishWords.remove(question.getEnglish());
             learnedWords.remove(question.getTranslation());
             add(question);
+            numQuestions +=1;
         }
 
     /**

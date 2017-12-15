@@ -3,7 +3,7 @@ package verlierer;
  
 import java.util.Random;
 
-public class Meow {
+public class PointSystem {
 
   
     public static void main(String[] args) {

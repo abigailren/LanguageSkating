@@ -6,13 +6,11 @@ public class MiniGameTest extends TestCase {
     MiniGame miniGame = new MiniGame(new German());
 
 
-    public void testSetUpGame() throws Exception {
-        miniGame.setUpGame();
 
-        assertNull(miniGame.getQuestion());
-    }
+    public void testNumQuestions() throws Exception {
+        miniGame.run();
 
-    public void testRunGame() throws Exception {
+        assertEquals(5, miniGame.numQuestions);
     }
 
     public void testMouseClicked() throws Exception {
