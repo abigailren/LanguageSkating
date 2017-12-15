@@ -12,6 +12,7 @@ public class Main extends GraphicsProgram{
     ArrayList<String> englishWords = new ArrayList<String>();
     ArrayList<String> learnedWords = new ArrayList<String>();
     GLabel answer;
+    Plot plot = new Plot();
 
 
     public static void main(String[] args){
@@ -42,7 +43,21 @@ public class Main extends GraphicsProgram{
         language.genRandList();
         englishWords = language.getQuizzedEnglishWords();
         learnedWords = language.getQuizzedWords();
-        GLabel english = new GLabel("English",50,100);
+
+
+        addScene(plot.scene(plot.firstScene));
+        waitForClick();
+        removeAll();
+        addScene(plot.scene(plot.secondScene));
+        waitForClick();
+        removeAll();
+        addScene(plot.scene(plot.thirdScene));
+        waitForClick();
+        removeAll();
+        //add(plot);
+
+        //for (int )
+         GLabel english = new GLabel("English",50,100);
         english.setFont("*-*-60");
         add(english);
         GLabel foreign = new GLabel(language.getLanguageName(),350,100);
@@ -56,7 +71,6 @@ public class Main extends GraphicsProgram{
             foreignWord.setFont("*-*-40");
             add(foreignWord, 350, i * 70 + 170);
         }
-        //for (int )
         Question question = new Question(language);
         GLabel qImage = new GLabel(question.printQuestion(),200,400);
         qImage.setFont("*-*-30");
@@ -151,6 +165,12 @@ public class Main extends GraphicsProgram{
         }
         else{
             return null;
+        }
+    }
+
+    public void addScene(List<Paragraph> scene){
+        for (int i=0;i<scene.size();i++){
+            add(scene.get(i),50,50+i*50);
         }
     }
 }
