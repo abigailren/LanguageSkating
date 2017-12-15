@@ -11,6 +11,7 @@ public class Main extends GraphicsProgram{
     Opening open = new Opening();
     ArrayList<String> englishWords = new ArrayList<String>();
     ArrayList<String> learnedWords = new ArrayList<String>();
+    GLabel answer;
 
 
     public static void main(String[] args){
@@ -30,16 +31,17 @@ public class Main extends GraphicsProgram{
         add(open.spain);
         System.out.println(selection);
         addMouseListeners();
+        //while(selection.equals(null)){
         waitForClick();
-        removeAll();
+        //removeAll();
         System.out.println("AHHHHHH");
        // while (selection.equals(null)){
-        //    removeAll();
+        removeAll();
         //}
         Language language = setLanguage(selection);
         language.genRandList();
-        englishWords = language.getLearnedEnglishWords();
-        learnedWords = language.getLearnedWords();
+        englishWords = language.getQuizzedEnglishWords();
+        learnedWords = language.getQuizzedWords();
         GLabel english = new GLabel("English",50,100);
         english.setFont("*-*-60");
         add(english);
@@ -54,20 +56,47 @@ public class Main extends GraphicsProgram{
             foreignWord.setFont("*-*-40");
             add(foreignWord, 350, i * 70 + 170);
         }
+        //for (int )
+        Question question = new Question(language);
+        GLabel qImage = new GLabel(question.printQuestion(),200,400);
+        qImage.setFont("*-*-30");
+        add(qImage);
+        List<String> words = question.getWords();
+        for (int i = 0;i<words.size();i++){
+            GLabel randAnswer = new GLabel(words.get(i));
+            randAnswer.setFont("*-*-30");
+            if (i%2==0){
+                add(randAnswer,200,450+(i/2)*50);
+            }
+            else{
+                add(randAnswer,500,450+(i/2)*50);
+            }
+            if (words.get(i).equals(question.getTranslation())){
+                answer = randAnswer;
+            }
+        }
+
     }
 
     public void mouseClicked(MouseEvent e) {
         GPoint last = new GPoint(e.getPoint());
         gobj = getElementAt(last);
-        if (gobj.equals(open.germany)||gobj.equals(open.germanyBio)) {
-            selection="germany";
-        }
-        else if (gobj.equals(open.japan)||gobj.equals(open.japanBio)) {
-            selection="japan";
-        } else if (gobj.equals(open.china)||gobj.equals(open.chinaBio)) {
-            selection="china";
-        } else if (gobj.equals(open.spain)||gobj.equals(open.spainBio)) {
-            selection="spain";
+        if (gobj.equals(open.germany) || gobj.equals(open.germanyBio)) {
+            selection = "germany";
+        } else if (gobj.equals(open.japan) || gobj.equals(open.japanBio)) {
+            selection = "japan";
+        } else if (gobj.equals(open.china) || gobj.equals(open.chinaBio)) {
+            selection = "china";
+        } else if (gobj.equals(open.spain) || gobj.equals(open.spainBio)) {
+            selection = "spain";
+        } else if (gobj.equals(answer)) {
+            removeAll();
+            GLabel eh = new GLabel("YOU WIN!", 450, 350);
+            eh.setFont("*-*-50");
+            add(eh);
+        } else {
+            removeAll();
+            add(new GLabel("YOU LOSE!", 500, 400));
         }
 
     }

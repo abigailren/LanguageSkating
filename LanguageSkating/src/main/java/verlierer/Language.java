@@ -9,8 +9,8 @@ public abstract class Language {
 
     ArrayList<String> wordList = new ArrayList(Arrays.asList(words));
     ArrayList<String> translatedWordList = new ArrayList<String>();
-    ArrayList<String> learnedEnglishWords = new ArrayList<String>();
-    ArrayList<String> learnedWords = new ArrayList<String>();
+    ArrayList<String> quizzedEnglishWords = new ArrayList<String>();
+    ArrayList<String> quizzedWords = new ArrayList<String>();
 
     public abstract Character createCharacter();
 
@@ -22,22 +22,22 @@ public abstract class Language {
             Random rand = new Random();
             int  n = rand.nextInt(wordList.size());
             System.out.println(wordList.get(n));
-            learnedEnglishWords.add(wordList.get(n));
+            quizzedEnglishWords.add(wordList.get(n));
             wordList.remove(n);
             System.out.println(getWordList().get(n));
-            learnedWords.add(getWordList().get(n));
+            quizzedWords.add(getWordList().get(n));
             getWordList().remove(n);
         }
     }
 
     //get getLearnWords
-    public ArrayList<String> getLearnedWords(){
-        return learnedWords;
+    public ArrayList<String> getQuizzedWords(){
+        return quizzedWords;
     }
 
     //get learnedEnglishWords
-    public ArrayList<String> getLearnedEnglishWords() {
-                return learnedEnglishWords;
+    public ArrayList<String> getQuizzedEnglishWords() {
+                return quizzedEnglishWords;
             }
 
     //abstract method to get translated version of String WORDS from subclass
