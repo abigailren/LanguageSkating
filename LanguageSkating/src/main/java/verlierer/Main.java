@@ -2,8 +2,10 @@ package verlierer;
 import acm.graphics.*;
 import acm.program.*;
 
+import java.awt.*;
 import java.awt.event.MouseEvent;
 import java.util.*;
+import java.util.List;
 
 
 public class Main extends GraphicsProgram{
@@ -34,7 +36,7 @@ public class Main extends GraphicsProgram{
      */
     public void run(){
 
-        this.setSize(1000,800);
+        this.setSize(1000,700);
         /*Language language = new German();
         ArrayList<String> wordList = language.genRandList();
         System.out.println(wordList.get(0));*/
@@ -43,20 +45,19 @@ public class Main extends GraphicsProgram{
         add(open.japan);
         add(open.china);
         add(open.spain);
-        System.out.println(selection);
         addMouseListeners();
         //while(selection.equals(null)){
         waitForClick();
         //removeAll();
-        System.out.println("AHHHHHH");
+        while (selection==null){
+            waitForClick();
+        }
        // while (selection.equals(null)){
         removeAll();
         //}
         Language language = setLanguage(selection);
 
-        System.out.println("plot");
         plot = new Plot(language);
-        System.out.println("plot");
         addScene(plot.scene(plot.firstScene,20));
         waitForClick();
         removeAll();
@@ -74,9 +75,10 @@ public class Main extends GraphicsProgram{
         englishWords = language.getQuizzedEnglishWords();
         learnedWords = language.getQuizzedWords();
 
+        MiniGame miniGame = new MiniGame(language);
+        miniGame.main(null);
 
-
-
+/*
          GLabel english = new GLabel("English",50,100);
         english.setFont("*-*-60");
         add(english);
@@ -109,7 +111,18 @@ public class Main extends GraphicsProgram{
             if (words.get(i).equals(question.getTranslation())){
                 answer = randAnswer;
             }
-        }
+        }*/
+        int score = 0;
+
+        System.out.println("Player: "+ score);
+        System.out.println("Kyle Deitrich: " + otherScore(38, 15));
+        System.out.println("Terry Ellis: " + otherScore(22, 10));
+        System.out.println("Reginald Germaine: " + otherScore(35, 18));
+        System.out.println("Frederick Finkelton: " + otherScore(45, 36));
+        System.out.println("Kwam Almanac: " + otherScore(33, 25));
+        System.out.println("Mary Zweidenfrued: " + otherScore(49, 40));
+        System.out.println("PB: " + otherScore(49, 40));
+        System.out.println("Wan Go: " + otherScore(49, 40));
 
     }
 
@@ -124,14 +137,9 @@ public class Main extends GraphicsProgram{
             selection = "china";
         } else if (gobj.equals(open.spain) || gobj.equals(open.spainBio)) {
             selection = "spain";
-        } else if (gobj.equals(answer)) {
-            removeAll();
-            GLabel eh = new GLabel("YOU WIN!", 450, 350);
-            eh.setFont("*-*-50");
-            add(eh);
-        } else {
-            removeAll();
-            add(new GLabel("YOU LOSE!", 500, 400));
+        }
+        else{
+            selection=null;
         }
 
     }
@@ -197,4 +205,14 @@ public class Main extends GraphicsProgram{
             bottomLine+=numLines*20+20;
         }
     }
+
+    public static int otherScore(int high, int low) {
+        double random = Math.random();
+        int range = high-low;
+        int score = (int) (random*range) + low;
+        return score;
+    }
+
+
+
 }

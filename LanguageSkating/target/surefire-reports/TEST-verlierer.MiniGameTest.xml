@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="1" failures="0" name="verlierer.AppTest" time="0.004" errors="0" skipped="0">
+<testsuite tests="5" failures="1" name="verlierer.MiniGameTest" time="0.203" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/lib"/>
@@ -64,5 +64,17 @@
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase classname="verlierer.AppTest" name="testApp" time="0.004"/>
+  <testcase classname="verlierer.MiniGameTest" name="testRun" time="0.203">
+    <failure message="expected:&lt;null&gt; but was:&lt;junit.framework.TestResult@589838eb&gt;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: expected:&lt;null&gt; but was:&lt;junit.framework.TestResult@589838eb&gt;
+	at junit.framework.Assert.fail(Assert.java:47)
+	at junit.framework.Assert.failNotEquals(Assert.java:282)
+	at junit.framework.Assert.assertEquals(Assert.java:64)
+	at junit.framework.Assert.assertEquals(Assert.java:71)
+	at verlierer.MiniGameTest.testRun(MiniGameTest.java:7)
+</failure>
+  </testcase>
+  <testcase classname="verlierer.MiniGameTest" name="testSetUpGame" time="0"/>
+  <testcase classname="verlierer.MiniGameTest" name="testRunGame" time="0"/>
+  <testcase classname="verlierer.MiniGameTest" name="testMouseClicked" time="0"/>
+  <testcase classname="verlierer.MiniGameTest" name="testMain" time="0"/>
 </testsuite>

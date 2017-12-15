@@ -1,0 +1,12 @@
+-------------------------------------------------------------------------------
+Test set: verlierer.MiniGameTest
+-------------------------------------------------------------------------------
+Tests run: 5, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.204 sec <<< FAILURE!
+testRun(verlierer.MiniGameTest)  Time elapsed: 0.203 sec  <<< FAILURE!
+junit.framework.AssertionFailedError: expected:<null> but was:<junit.framework.TestResult@589838eb>
+	at junit.framework.Assert.fail(Assert.java:47)
+	at junit.framework.Assert.failNotEquals(Assert.java:282)
+	at junit.framework.Assert.assertEquals(Assert.java:64)
+	at junit.framework.Assert.assertEquals(Assert.java:71)
+	at verlierer.MiniGameTest.testRun(MiniGameTest.java:7)
+

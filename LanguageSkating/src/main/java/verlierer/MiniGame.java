@@ -3,7 +3,8 @@ package verlierer;
 import acm.graphics.*;
 import acm.program.*;
 import java.awt.*;
-import acm.util.RandomGenerator;
+import acm.util.*;
+import java.util.*;
 
 import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
@@ -26,10 +27,16 @@ public class MiniGame extends GraphicsProgram{
     private GOval checkpoint1, checkpoint2;
     private final GObject skater;
     private final GImage rink;
-    private boolean skatingAlong;
     private GRect questionBox;
-    Language language;
+    private Question question;
+    private static Language language;
     GLabel answer;
+    int score;
+    ArrayList<String> englishWords;
+    ArrayList<String> learnedWords;
+    GLabel correct = new GLabel("Correct!", 450, 350);
+    GLabel wrong = new GLabel("Wrong!", 450, 350);
+    ArrayList<GLabel> answers = new ArrayList<GLabel>();
 
 
     /**
@@ -37,10 +44,13 @@ public class MiniGame extends GraphicsProgram{
      * and declare the language that will be used throughout.
      * It also declares the coordinates for rink.
      */
-    public MiniGame() {
+
+
+
+    public MiniGame(Language language) {
         this.skater = new GImage("skaterIcon.png");
-        this.rink = new GImage("rink.png",0,0);
-        this.language = new German();
+        this.rink = new GImage("rink.png");
+        this.language = language;
     }
 
 
@@ -63,6 +73,10 @@ public class MiniGame extends GraphicsProgram{
     public void run () {
         int checkpoints = 5;
         setUpGame();
+
+        addMouseListeners();
+        //everytime that the player has not yet reached 5 checkpoints run the game
+
         for(int i = 0; i < checkpoints; i++){
             runGame();
         }
@@ -71,7 +85,12 @@ public class MiniGame extends GraphicsProgram{
         victoryMessage.setFont("SansSerif-36");
         victoryMessage.setColor(Color.MAGENTA);
         add(victoryMessage);
+        GLabel finalScore = new GLabel("Final Score: "+score,100,400);
+        finalScore.setFont("SansSerif-30");
+        finalScore.setColor(Color.MAGENTA);
+        add(finalScore);
         skater.setVisible(false);
+        System.out.println(score);
         waitForClick();
         victoryMessage.setVisible(false);
     }
@@ -85,9 +104,13 @@ public class MiniGame extends GraphicsProgram{
      * Add a GLabel asking the player if they are ready and once they click the skater appears in the top left corner,
      * starting the game for the player.
      */
-    private void setUpGame() {
+ public void setUpGame() {
+        //set rink as the background image, and set the location at the origin
+        //as the size of the image rink is the same as that of the application
+        // in order to cover the the full background
+        this.setSize(1000,700);
+        rink.setSize(1000,700);
         add(rink);
-        rink.setSize(1000,800);
         rink.sendToBack();
         addKeyListeners();
         //add KeyListeners to navigate the rink
@@ -105,6 +128,12 @@ public class MiniGame extends GraphicsProgram{
         waitForClick();
         getReady.setVisible(false);
         add(skater,150, 150);
+        language.genRandList();
+        englishWords = language.getQuizzedEnglishWords();
+        learnedWords = language.getQuizzedWords();
+        score=0;
+        correct.setFont("*-*-36");
+        wrong.setFont("*-*-36");
     }
 
 
@@ -113,6 +142,7 @@ public class MiniGame extends GraphicsProgram{
      * and one to find out when the task has been achieved.
      */
     private void runGame(){
+
         setCheckpoints();
         letsSkate();
     }
@@ -126,7 +156,7 @@ public class MiniGame extends GraphicsProgram{
      * once it is also completed we can break out of the while loop and complete a round of the game.
      */
     private void letsSkate(){
-        while(skatingAlong = true){
+        while(true){
             double c2x = checkpoint2.getX();
             double c2y = checkpoint2.getY();
 
@@ -135,6 +165,8 @@ public class MiniGame extends GraphicsProgram{
                 checkpoint1.setVisible(false);
                 checkpoint2.setVisible(false);
                 questionTime();
+
+                waitForClick();
                 break;
             }
         }
@@ -171,26 +203,33 @@ public class MiniGame extends GraphicsProgram{
      * If it clicks the correct answer he is supposed to be awarded points,
      * but will be able to continue the game regarless of whether they choose the right or wrong answer.
      */
-    private void addQuestion(){
-            Question question = new Question(language);
+
+        private void addQuestion(){
+
+            question = new Question(language);
             GLabel qImage = new GLabel(question.printQuestion(), 300, 250);
             qImage.setFont("*-*-30");
             qImage.setColor(Color.black);
             qImage.sendToFront();
-            add(qImage);
+            question.add(qImage);
             List<String> words = question.getWords();
-            for (int i = 0; i < words.size(); i++) {
+            for (int i = 0;i<words.size();i++){
                 GLabel randAnswer = new GLabel(words.get(i));
                 randAnswer.setFont("*-*-30");
-                if (i % 2 == 0) {
-                    add(randAnswer, 200, 450 + (i / 2) * 50);
-                } else {
-                    add(randAnswer, 500, 450 + (i / 2) * 50);
+                if (i%2==0){
+                    add(randAnswer,200,450+(i/2)*50);
                 }
-                if (words.get(i).equals(question.getTranslation())) {
+                else{
+                    add(randAnswer,500,450+(i/2)*50);
+                }
+                if (words.get(i).equals(question.getTranslation())){
                     answer = randAnswer;
                 }
+                answers.add(randAnswer);
             }
+            englishWords.remove(question.getEnglish());
+            learnedWords.remove(question.getTranslation());
+            add(question);
         }
 
     /**
@@ -223,7 +262,9 @@ public class MiniGame extends GraphicsProgram{
         RandomGenerator rgen;
         rgen = new RandomGenerator();
         randyX = rgen.nextDouble(100,900);
-        randyY = rgen.nextDouble(100,700);
+
+        randyY = rgen.nextDouble(100,600);
+
         checkpoint1 = createCheckpoint();
         checkpoint1.setColor(Color.RED);
         checkpoint2 = createCheckpoint();
@@ -244,6 +285,8 @@ public class MiniGame extends GraphicsProgram{
      * @param e
      */
     public void keyPressed(KeyEvent e) {
+        remove(correct);
+        remove(wrong);
         double dx = skater.getX();
         double dy = skater.getY();
         switch (e.getKeyCode()) {
@@ -293,7 +336,23 @@ public class MiniGame extends GraphicsProgram{
      * @param e
      */
  public void mouseClicked(MouseEvent e) {
-     skatingAlong = true;
+     GPoint last = new GPoint(e.getPoint());
+     GObject gobj = getElementAt(last);
+     if (gobj.equals(answer)) {
+         score+=5;
+         add(correct);
+
+     } else {
+         score+=1;
+         add(wrong);
+
+     }
+
+     remove(question);
+     remove(questionBox);
+     for(int i=0;i<answers.size();i++){
+         remove(answers.get(i));
+     }
  }
 
     /**
@@ -301,7 +360,14 @@ public class MiniGame extends GraphicsProgram{
      * @param args
      */
  public static void main(String[] args) {
-     new MiniGame().start();
+     new MiniGame(language).start();
+ }
+
+ public GObject getSkater(){
+     return skater;
+ }
+ public int getScore(){
+     return score;
  }
 
 }

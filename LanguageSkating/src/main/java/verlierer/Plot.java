@@ -1,7 +1,10 @@
 package verlierer;
 
 import acm.graphics.*;
+
+import java.awt.*;
 import java.util.*;
+import java.util.List;
 
 public class Plot extends GCompound{
 
@@ -87,7 +90,14 @@ public class Plot extends GCompound{
         for (int i=0;i<a.length;i++){
             Paragraph p = new Paragraph(80,a[i]);
             p.setFont(fontSize);
+            if (i%2==0){
+                p.setColor(Color.BLACK);
+            }
+            else{
+                p.setColor(Color.BLUE);
+            }
             scene.add(p);
+
         }
         return scene;
     }
