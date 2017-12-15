@@ -78,40 +78,7 @@ public class Main extends GraphicsProgram{
         MiniGame miniGame = new MiniGame(language);
         miniGame.main(null);
 
-/*
-         GLabel english = new GLabel("English",50,100);
-        english.setFont("*-*-60");
-        add(english);
-        GLabel foreign = new GLabel(language.getLanguageName(),350,100);
-        foreign.setFont("*-*-60");
-        add(foreign);
-        for (int i = 0; i< 3; i++) {
-            GLabel engWord = new GLabel(englishWords.get(i));
-            GLabel foreignWord = new GLabel(learnedWords.get(i));
-            engWord.setFont("*-*-40");
-            add(engWord, 50, i * 70 + 170);
-            foreignWord.setFont("*-*-40");
-            add(foreignWord, 350, i * 70 + 170);
-        }
-
-        Question question = new Question(language);
-        GLabel qImage = new GLabel(question.printQuestion(),200,400);
-        qImage.setFont("*-*-30");
-        add(qImage);
-        List<String> words = question.getWords();
-        for (int i = 0;i<words.size();i++){
-            GLabel randAnswer = new GLabel(words.get(i));
-            randAnswer.setFont("*-*-30");
-            if (i%2==0){
-                add(randAnswer,200,450+(i/2)*50);
-            }
-            else{
-                add(randAnswer,500,450+(i/2)*50);
-            }
-            if (words.get(i).equals(question.getTranslation())){
-                answer = randAnswer;
-            }
-        }*/
+        /*code to be implemented in the future
         int score = 0;
 
         System.out.println("Player: "+ score);
@@ -122,7 +89,7 @@ public class Main extends GraphicsProgram{
         System.out.println("Kwam Almanac: " + otherScore(33, 25));
         System.out.println("Mary Zweidenfrued: " + otherScore(49, 40));
         System.out.println("PB: " + otherScore(49, 40));
-        System.out.println("Wan Go: " + otherScore(49, 40));
+        System.out.println("Wan Go: " + otherScore(49, 40));*/
 
     }
 
@@ -179,6 +146,11 @@ public class Main extends GraphicsProgram{
 
     }
 
+    /**
+     * set Language language to its subclass based on the parameter given
+     * @param s
+     * @return subclass of Language, default returns German
+     */
     public Language setLanguage(String s){
         if (s.equals("germany")){
             return new German();
@@ -197,6 +169,10 @@ public class Main extends GraphicsProgram{
         }
     }
 
+    /**
+     * used to add Scenes for the plot
+     * @param scene
+     */
     public void addScene(List<Paragraph> scene){
         int bottomLine = 50;
         for (int i=0;i<scene.size();i++){
