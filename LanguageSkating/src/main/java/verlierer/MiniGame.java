@@ -92,7 +92,7 @@ public class MiniGame extends GraphicsProgram{
         skater.setVisible(false);
         System.out.println(score);
         waitForClick();
-        victoryMessage.setVisible(false);
+        System.exit(0);
     }
 
 
@@ -369,5 +369,6 @@ public class MiniGame extends GraphicsProgram{
  public int getScore(){
      return score;
  }
+ public Question getQuestion(){return question;}
 
 }

@@ -7,7 +7,9 @@ public class MiniGameTest extends TestCase {
 
 
     public void testSetUpGame() throws Exception {
+        miniGame.setUpGame();
 
+        assertNull(miniGame.getQuestion());
     }
 
     public void testRunGame() throws Exception {
