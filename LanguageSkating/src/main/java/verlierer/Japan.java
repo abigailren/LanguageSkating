@@ -1,6 +1,9 @@
 package verlierer;
 import acm.graphics.*;
 
+/**
+ * Japan class, implements Character
+ */
 public class Japan implements Character{
     /**
      * The GImage labelled appearance refers to the images we made of each character,

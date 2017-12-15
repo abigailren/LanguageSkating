@@ -2,6 +2,10 @@ package verlierer;
 
 import java.util.*;
 
+
+/**
+ * Implements array of Chinese words corresponding to that of Language
+ */
 public class Chinese extends Language{
     /**
      * String declaring that this language is Chinese, followed by the wordArray listing all

@@ -5,9 +5,88 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="45ef18d9-15ec-452b-a896-a652237bb94f" name="Default" comment="">
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/verlierer/Meow.java" afterPath="$PROJECT_DIR$/src/main/java/verlierer/PointSystem.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/verlierer/MiniGame.java" afterPath="$PROJECT_DIR$/src/main/java/verlierer/MiniGame.java" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/verlierer/App.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/verlierer/AppTest.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/verlierer/App.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/verlierer/Meow.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/verlierer/AppTest.class" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/verlierer/MiniGameTest.class" afterPath="$PROJECT_DIR$/target/test-classes/verlierer/MiniGameTest.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/verlierer/Character.java" afterPath="$PROJECT_DIR$/src/main/java/verlierer/Character.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/verlierer/China.java" afterPath="$PROJECT_DIR$/src/main/java/verlierer/China.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/verlierer/Chinese.java" afterPath="$PROJECT_DIR$/src/main/java/verlierer/Chinese.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/verlierer/German.java" afterPath="$PROJECT_DIR$/src/main/java/verlierer/German.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/verlierer/Germany.java" afterPath="$PROJECT_DIR$/src/main/java/verlierer/Germany.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/verlierer/Japan.java" afterPath="$PROJECT_DIR$/src/main/java/verlierer/Japan.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/verlierer/Japanese.java" afterPath="$PROJECT_DIR$/src/main/java/verlierer/Japanese.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/verlierer/Language.java" afterPath="$PROJECT_DIR$/src/main/java/verlierer/Language.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/verlierer/Opening.java" afterPath="$PROJECT_DIR$/src/main/java/verlierer/Opening.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/verlierer/Spain.java" afterPath="$PROJECT_DIR$/src/main/java/verlierer/Spain.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/verlierer/Spanish.java" afterPath="$PROJECT_DIR$/src/main/java/verlierer/Spanish.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/verlierer/MiniGameTest.java" afterPath="$PROJECT_DIR$/src/test/java/verlierer/MiniGameTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-verlierer.AppTest.xml" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-verlierer.AppTest.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-verlierer.CharacterTest.xml" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-verlierer.CharacterTest.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-verlierer.MainTest.xml" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-verlierer.MainTest.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-verlierer.MiniGameTest.xml" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-verlierer.MiniGameTest.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-verlierer.PlotTest.xml" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-verlierer.PlotTest.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/surefire-reports/verlierer.AppTest.txt" afterPath="$PROJECT_DIR$/target/surefire-reports/verlierer.AppTest.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/surefire-reports/verlierer.MainTest.txt" afterPath="$PROJECT_DIR$/target/surefire-reports/verlierer.MainTest.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/surefire-reports/verlierer.MiniGameTest.txt" afterPath="$PROJECT_DIR$/target/surefire-reports/verlierer.MiniGameTest.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/surefire-reports/verlierer.PlotTest.txt" afterPath="$PROJECT_DIR$/target/surefire-reports/verlierer.PlotTest.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../javadocs/allclasses-frame.html" afterPath="$PROJECT_DIR$/../javadocs/allclasses-frame.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../javadocs/allclasses-noframe.html" afterPath="$PROJECT_DIR$/../javadocs/allclasses-noframe.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../javadocs/constant-values.html" afterPath="$PROJECT_DIR$/../javadocs/constant-values.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../javadocs/deprecated-list.html" afterPath="$PROJECT_DIR$/../javadocs/deprecated-list.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../javadocs/help-doc.html" afterPath="$PROJECT_DIR$/../javadocs/help-doc.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../javadocs/index-files/index-1.html" afterPath="$PROJECT_DIR$/../javadocs/index-files/index-1.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../javadocs/index-files/index-10.html" afterPath="$PROJECT_DIR$/../javadocs/index-files/index-10.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../javadocs/index-files/index-11.html" afterPath="$PROJECT_DIR$/../javadocs/index-files/index-11.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../javadocs/index-files/index-12.html" afterPath="$PROJECT_DIR$/../javadocs/index-files/index-12.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../javadocs/index-files/index-13.html" afterPath="$PROJECT_DIR$/../javadocs/index-files/index-13.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../javadocs/index-files/index-14.html" afterPath="$PROJECT_DIR$/../javadocs/index-files/index-14.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../javadocs/index-files/index-15.html" afterPath="$PROJECT_DIR$/../javadocs/index-files/index-15.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../javadocs/index-files/index-16.html" afterPath="$PROJECT_DIR$/../javadocs/index-files/index-16.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../javadocs/index-files/index-17.html" afterPath="$PROJECT_DIR$/../javadocs/index-files/index-17.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../javadocs/index-files/index-2.html" afterPath="$PROJECT_DIR$/../javadocs/index-files/index-2.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../javadocs/index-files/index-3.html" afterPath="$PROJECT_DIR$/../javadocs/index-files/index-3.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../javadocs/index-files/index-4.html" afterPath="$PROJECT_DIR$/../javadocs/index-files/index-4.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../javadocs/index-files/index-5.html" afterPath="$PROJECT_DIR$/../javadocs/index-files/index-5.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../javadocs/index-files/index-6.html" afterPath="$PROJECT_DIR$/../javadocs/index-files/index-6.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../javadocs/index-files/index-7.html" afterPath="$PROJECT_DIR$/../javadocs/index-files/index-7.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../javadocs/index-files/index-8.html" afterPath="$PROJECT_DIR$/../javadocs/index-files/index-8.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../javadocs/index-files/index-9.html" afterPath="$PROJECT_DIR$/../javadocs/index-files/index-9.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../javadocs/index.html" afterPath="$PROJECT_DIR$/../javadocs/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../javadocs/overview-tree.html" afterPath="$PROJECT_DIR$/../javadocs/overview-tree.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../javadocs/serialized-form.html" afterPath="$PROJECT_DIR$/../javadocs/serialized-form.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../javadocs/verlierer/App.html" afterPath="$PROJECT_DIR$/../javadocs/verlierer/App.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../javadocs/verlierer/AppTest.html" afterPath="$PROJECT_DIR$/../javadocs/verlierer/AppTest.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../javadocs/verlierer/Bios.html" afterPath="$PROJECT_DIR$/../javadocs/verlierer/Bios.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../javadocs/verlierer/Character.html" afterPath="$PROJECT_DIR$/../javadocs/verlierer/Character.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../javadocs/verlierer/China.html" afterPath="$PROJECT_DIR$/../javadocs/verlierer/China.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../javadocs/verlierer/Chinese.html" afterPath="$PROJECT_DIR$/../javadocs/verlierer/Chinese.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../javadocs/verlierer/German.html" afterPath="$PROJECT_DIR$/../javadocs/verlierer/German.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../javadocs/verlierer/Germany.html" afterPath="$PROJECT_DIR$/../javadocs/verlierer/Germany.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../javadocs/verlierer/Japan.html" afterPath="$PROJECT_DIR$/../javadocs/verlierer/Japan.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../javadocs/verlierer/Japanese.html" afterPath="$PROJECT_DIR$/../javadocs/verlierer/Japanese.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../javadocs/verlierer/Language.html" afterPath="$PROJECT_DIR$/../javadocs/verlierer/Language.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../javadocs/verlierer/Main.html" afterPath="$PROJECT_DIR$/../javadocs/verlierer/Main.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../javadocs/verlierer/MainTest.html" afterPath="$PROJECT_DIR$/../javadocs/verlierer/MainTest.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../javadocs/verlierer/MiniGame.html" afterPath="$PROJECT_DIR$/../javadocs/verlierer/MiniGame.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../javadocs/verlierer/MiniGameTest.html" afterPath="$PROJECT_DIR$/../javadocs/verlierer/MiniGameTest.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../javadocs/verlierer/Opening.html" afterPath="$PROJECT_DIR$/../javadocs/verlierer/Opening.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../javadocs/verlierer/Paragraph.html" afterPath="$PROJECT_DIR$/../javadocs/verlierer/Paragraph.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../javadocs/verlierer/Plot.html" afterPath="$PROJECT_DIR$/../javadocs/verlierer/Plot.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../javadocs/verlierer/PlotTest.html" afterPath="$PROJECT_DIR$/../javadocs/verlierer/PlotTest.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../javadocs/verlierer/Question.html" afterPath="$PROJECT_DIR$/../javadocs/verlierer/Question.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../javadocs/verlierer/Spain.html" afterPath="$PROJECT_DIR$/../javadocs/verlierer/Spain.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../javadocs/verlierer/Spanish.html" afterPath="$PROJECT_DIR$/../javadocs/verlierer/Spanish.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../javadocs/verlierer/package-frame.html" afterPath="$PROJECT_DIR$/../javadocs/verlierer/package-frame.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../javadocs/verlierer/package-summary.html" afterPath="$PROJECT_DIR$/../javadocs/verlierer/package-summary.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../javadocs/verlierer/package-tree.html" afterPath="$PROJECT_DIR$/../javadocs/verlierer/package-tree.html" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -19,100 +98,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Opening.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/verlierer/Opening.java">
+      <file leaf-file-name="Spain.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/verlierer/Spain.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="10" column="16" lean-forward="false" selection-start-line="10" selection-start-column="16" selection-end-line="10" selection-end-column="16" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CharacterTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/verlierer/CharacterTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="9" column="7" lean-forward="false" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MiniGameTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/verlierer/MiniGameTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="10" column="21" lean-forward="false" selection-start-line="10" selection-start-column="21" selection-end-line="10" selection-end-column="21" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PointSystem.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/verlierer/PointSystem.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-477">
-              <caret line="5" column="24" lean-forward="false" selection-start-line="5" selection-start-column="24" selection-end-line="5" selection-end-column="24" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MiniGame.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/verlierer/MiniGame.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="356">
-              <caret line="237" column="7" lean-forward="true" selection-start-line="237" selection-start-column="7" selection-end-line="237" selection-end-column="7" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#1315#1323#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MainTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/verlierer/MainTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/verlierer/Main.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="404">
-              <caret line="95" column="44" lean-forward="false" selection-start-line="95" selection-start-column="44" selection-end-line="95" selection-end-column="44" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#546#554#0" expanded="true" />
-                <element signature="e#608#616#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TEST-verlierer.CharacterTest.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/target/surefire-reports/TEST-verlierer.CharacterTest.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TEST-verlierer.AppTest.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/target/surefire-reports/TEST-verlierer.AppTest.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-702">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="45">
+              <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="6" selection-end-column="3" />
               <folding />
             </state>
           </provider>
@@ -121,8 +111,93 @@
       <file leaf-file-name="Germany.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/verlierer/Germany.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="9" column="22" lean-forward="false" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="22" />
+            <state relative-caret-position="60">
+              <caret line="4" column="10" lean-forward="false" selection-start-line="4" selection-start-column="10" selection-end-line="4" selection-end-column="10" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Chinese.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/verlierer/Chinese.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="88">
+              <caret line="6" column="30" lean-forward="false" selection-start-line="6" selection-start-column="30" selection-end-line="6" selection-end-column="30" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Spanish.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/verlierer/Spanish.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="165">
+              <caret line="11" column="74" lean-forward="false" selection-start-line="11" selection-start-column="74" selection-end-line="11" selection-end-column="74" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LanguageTest.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/verlierer/LanguageTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="165">
+              <caret line="11" column="53" lean-forward="true" selection-start-line="11" selection-start-column="53" selection-end-line="11" selection-end-column="53" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="China.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/verlierer/China.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="75">
+              <caret line="5" column="8" lean-forward="false" selection-start-line="5" selection-start-column="8" selection-end-line="5" selection-end-column="8" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Japan.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/verlierer/Japan.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="4" column="8" lean-forward="false" selection-start-line="4" selection-start-column="8" selection-end-line="4" selection-end-column="8" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Language.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/verlierer/Language.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="4" column="90" lean-forward="false" selection-start-line="4" selection-start-column="90" selection-end-line="4" selection-end-column="90" />
+              <folding>
+                <element signature="e#560#568#0" expanded="true" />
+                <element signature="e#622#630#0" expanded="true" />
+                <element signature="e#988#996#0" expanded="true" />
+                <element signature="e#1055#1063#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Japanese.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/verlierer/Japanese.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="74">
+              <caret line="5" column="3" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="5" selection-end-column="3" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="German.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/verlierer/German.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="4" column="29" lean-forward="false" selection-start-line="4" selection-start-column="29" selection-end-line="4" selection-end-column="29" />
               <folding />
             </state>
           </provider>
@@ -166,29 +241,30 @@
         <option value="$PROJECT_DIR$/src/test/java/verlierer/OpeningTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/verlierer/ParagraphApp.java" />
         <option value="$PROJECT_DIR$/src/main/java/verlierer/Bios.java" />
-        <option value="$PROJECT_DIR$/src/main/java/verlierer/Germany.java" />
-        <option value="$PROJECT_DIR$/src/main/java/verlierer/Japan.java" />
-        <option value="$PROJECT_DIR$/src/main/java/verlierer/China.java" />
-        <option value="$PROJECT_DIR$/src/main/java/verlierer/Spain.java" />
-        <option value="$PROJECT_DIR$/src/main/java/verlierer/Character.java" />
-        <option value="$PROJECT_DIR$/src/main/java/verlierer/Spanish.java" />
-        <option value="$PROJECT_DIR$/src/main/java/verlierer/Japanese.java" />
-        <option value="$PROJECT_DIR$/src/main/java/verlierer/German.java" />
-        <option value="$PROJECT_DIR$/src/main/java/verlierer/Chinese.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/test/java/verlierer/PlotTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/verlierer/Plot.java" />
-        <option value="$PROJECT_DIR$/src/main/java/verlierer/Language.java" />
         <option value="$PROJECT_DIR$/src/main/java/verlierer/Question.java" />
         <option value="$PROJECT_DIR$/src/main/java/verlierer/Paragraph.java" />
-        <option value="$PROJECT_DIR$/src/main/java/verlierer/Opening.java" />
         <option value="$PROJECT_DIR$/src/main/java/verlierer/Main.java" />
         <option value="$PROJECT_DIR$/target/surefire-reports/TEST-verlierer.CharacterTest.xml" />
         <option value="$PROJECT_DIR$/src/test/java/verlierer/CharacterTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/verlierer/MainTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/verlierer/MiniGame.java" />
-        <option value="$PROJECT_DIR$/src/test/java/verlierer/MiniGameTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/verlierer/Meow.java" />
+        <option value="$PROJECT_DIR$/src/test/java/verlierer/MiniGameTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/verlierer/Opening.java" />
+        <option value="$PROJECT_DIR$/src/main/java/verlierer/Character.java" />
+        <option value="$PROJECT_DIR$/src/main/java/verlierer/Spain.java" />
+        <option value="$PROJECT_DIR$/src/main/java/verlierer/Germany.java" />
+        <option value="$PROJECT_DIR$/src/main/java/verlierer/China.java" />
+        <option value="$PROJECT_DIR$/src/main/java/verlierer/Japan.java" />
+        <option value="$PROJECT_DIR$/src/main/java/verlierer/Japanese.java" />
+        <option value="$PROJECT_DIR$/src/main/java/verlierer/Language.java" />
+        <option value="$PROJECT_DIR$/src/main/java/verlierer/German.java" />
+        <option value="$PROJECT_DIR$/src/main/java/verlierer/Chinese.java" />
+        <option value="$PROJECT_DIR$/src/main/java/verlierer/Spanish.java" />
+        <option value="$PROJECT_DIR$/src/test/java/verlierer/LanguageTest.java" />
       </list>
     </option>
   </component>
@@ -941,10 +1017,11 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="66032000" />
+    <option name="totallyTimeSpent" value="66892000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="56" y="23" width="1198" height="704" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
@@ -959,7 +1036,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24874792" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24874792" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Inspection Results" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32880846" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32880846" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -1011,7 +1088,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar:///usr/lib/jvm/java-1.8.0-openjdk-amd64/jre/lib/rt.jar!/java/awt/Component.class" />
     <entry file="jar:///usr/lib/jvm/java-1.8.0-openjdk-amd64/jre/lib/rt.jar!/java/awt/AWTEventMulticaster.class" />
     <entry file="jar://$USER_HOME$/Downloads/acm.jar!/acm/program/GraphicsProgram.class">
       <provider selected="true" editor-type-id="text-editor">
@@ -1120,30 +1196,6 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/verlierer/China.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="19" column="5" lean-forward="true" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/verlierer/Spain.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="49" lean-forward="false" selection-start-line="10" selection-start-column="49" selection-end-line="10" selection-end-column="49" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/verlierer/Japanese.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="23" column="59" lean-forward="false" selection-start-line="23" selection-start-column="59" selection-end-line="23" selection-end-column="59" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1171,22 +1223,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/verlierer/Chinese.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="16" column="59" lean-forward="false" selection-start-line="16" selection-start-column="59" selection-end-line="16" selection-end-column="59" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/verlierer/App.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
           <caret line="8" column="22" lean-forward="false" selection-start-line="8" selection-start-column="22" selection-end-line="8" selection-end-column="22" />
-          <folding>
-            <element signature="e#116#117#0" expanded="false" />
-            <element signature="e#168#169#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1202,14 +1243,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
           <caret line="9" column="1" lean-forward="false" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/verlierer/Spanish.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="23" column="11" lean-forward="false" selection-start-line="23" selection-start-column="11" selection-end-line="23" selection-end-column="11" />
           <folding />
         </state>
       </provider>
@@ -1271,60 +1304,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/verlierer/Japan.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="16" column="5" lean-forward="false" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="352">
           <caret line="161" column="13" lean-forward="true" selection-start-line="161" selection-start-column="13" selection-end-line="161" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/verlierer/Language.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="16">
-          <caret line="46" column="7" lean-forward="false" selection-start-line="46" selection-start-column="7" selection-end-line="46" selection-end-column="7" />
-          <folding>
-            <element signature="e#461#469#0" expanded="true" />
-            <element signature="e#523#531#0" expanded="true" />
-            <element signature="e#889#897#0" expanded="true" />
-            <element signature="e#956#964#0" expanded="true" />
-            <element signature="e#1823#1824#0" expanded="true" />
-            <element signature="e#1854#1855#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/verlierer/Character.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="23" lean-forward="false" selection-start-line="5" selection-start-column="23" selection-end-line="5" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/verlierer/German.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="290">
-          <caret line="30" column="8" lean-forward="false" selection-start-line="30" selection-start-column="8" selection-end-line="30" selection-end-column="8" />
-          <folding>
-            <element signature="e#1245#1246#0" expanded="true" />
-            <element signature="e#1281#1282#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/verlierer/Germany.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="22" lean-forward="false" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="22" />
           <folding />
         </state>
       </provider>
@@ -1355,14 +1338,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/verlierer/Opening.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="10" column="16" lean-forward="false" selection-start-line="10" selection-start-column="16" selection-end-line="10" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/verlierer/MainTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
@@ -1383,18 +1358,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/verlierer/MiniGameTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="21" lean-forward="false" selection-start-line="10" selection-start-column="21" selection-end-line="10" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/verlierer/MiniGame.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="356">
-          <caret line="237" column="7" lean-forward="true" selection-start-line="237" selection-start-column="7" selection-end-line="237" selection-end-column="7" />
+          <caret line="237" column="7" lean-forward="false" selection-start-line="237" selection-start-column="7" selection-end-line="237" selection-end-column="7" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#1315#1323#0" expanded="true" />
@@ -1406,6 +1373,115 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-477">
           <caret line="5" column="24" lean-forward="false" selection-start-line="5" selection-start-column="24" selection-end-line="5" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/verlierer/Opening.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="8" column="32" lean-forward="false" selection-start-line="8" selection-start-column="32" selection-end-line="8" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/verlierer/Character.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="0" lean-forward="true" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/verlierer/MiniGameTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/verlierer/Spain.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="6" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/verlierer/Germany.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="10" lean-forward="false" selection-start-line="4" selection-start-column="10" selection-end-line="4" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/verlierer/China.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="8" lean-forward="false" selection-start-line="5" selection-start-column="8" selection-end-line="5" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/verlierer/Japan.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="8" lean-forward="false" selection-start-line="4" selection-start-column="8" selection-end-line="4" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/verlierer/Language.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="90" lean-forward="false" selection-start-line="4" selection-start-column="90" selection-end-line="4" selection-end-column="90" />
+          <folding>
+            <element signature="e#560#568#0" expanded="true" />
+            <element signature="e#622#630#0" expanded="true" />
+            <element signature="e#988#996#0" expanded="true" />
+            <element signature="e#1055#1063#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/verlierer/Japanese.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="74">
+          <caret line="5" column="3" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="5" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/verlierer/German.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="29" lean-forward="false" selection-start-line="4" selection-start-column="29" selection-end-line="4" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/verlierer/Chinese.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="6" column="30" lean-forward="false" selection-start-line="6" selection-start-column="30" selection-end-line="6" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/verlierer/Spanish.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="74" lean-forward="false" selection-start-line="11" selection-start-column="74" selection-end-line="11" selection-end-column="74" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/verlierer/LanguageTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="53" lean-forward="true" selection-start-line="11" selection-start-column="53" selection-end-line="11" selection-end-column="53" />
           <folding />
         </state>
       </provider>

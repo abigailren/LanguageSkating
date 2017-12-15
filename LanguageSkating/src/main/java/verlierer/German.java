@@ -1,6 +1,9 @@
 package verlierer;
 import java.util.*;
 
+/**
+ * Implements array of German words corresponding to that of Language
+ */
 public class German extends Language{
     /**
      * String declaring that this language is German, followed by the wordArray listing all

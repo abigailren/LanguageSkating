@@ -2,6 +2,9 @@ package verlierer;
 
 import java.util.*;
 
+/**
+ * Implements array of Spanish words corresponding to that of Language
+ */
 public class Spanish extends Language{
     /**
      * String declaring that this language is spanish, followed by the wordArray listing all

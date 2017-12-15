@@ -6,7 +6,7 @@ import acm.program.*;
 import java.awt.event.*;
 
 /**
- * Created by abigailren on 11/28/17.
+ * Opening screen of application.
  */
 public class Opening extends GCompound {
     Bios bio = new Bios();
@@ -23,6 +23,9 @@ public class Opening extends GCompound {
     Paragraph instructions = new Paragraph(100, instruct);
     private GObject gobj;
 
+    /**
+     * Opening adds all the elements of the opening to be called for the Main class
+     */
     public Opening(){
         add(instructions,50,50);
         germany.setSize(150, 300);

@@ -1,6 +1,9 @@
 package verlierer;
 import java.util.*;
 
+/**
+ * instantiates words to be learned in English that will correspond to the other languages
+ */
 public abstract class Language {
     String languageName;
     final String[] words = new String[] {"Hello", "Goodbye", "Yes",

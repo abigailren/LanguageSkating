@@ -1,4 +1,5 @@
 verlierer/China.class
+verlierer/PointSystem.class
 verlierer/Chinese.class
 verlierer/Spanish.class
 verlierer/Germany.class
@@ -12,7 +13,5 @@ verlierer/Character.class
 verlierer/Spain.class
 verlierer/Japan.class
 verlierer/Opening.class
-verlierer/Meow.class
 verlierer/German.class
 verlierer/Question.class
-verlierer/App.class

@@ -1,6 +1,9 @@
 package verlierer;
 import java.util.*;
 
+/**
+ * Implements array of Japanese words corresponding to that of Language
+ */
 public class Japanese extends Language{
     /**
      * String declaring that this language is Japanese, followed by the wordArray listing all

@@ -1,7 +1,7 @@
 package verlierer;
 import acm.graphics.*;
 /**
- * Created by abigailren on 11/28/17.
+ * Character interface.
  */
 public interface Character {
 

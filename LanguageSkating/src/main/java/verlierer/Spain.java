@@ -2,6 +2,9 @@ package verlierer;
 
 import acm.graphics.*;
 
+/**
+ * Spain class, implements Character
+ */
 public class Spain implements Character{
     /**
      * The GImage labelled appearance refers to the images we made of each character,
