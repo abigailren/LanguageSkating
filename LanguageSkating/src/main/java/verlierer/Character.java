@@ -5,7 +5,7 @@ import acm.graphics.*;
  */
 public interface Character {
 
-
+    
     public GImage getAppearance();
     public GLabel getSummary();
 

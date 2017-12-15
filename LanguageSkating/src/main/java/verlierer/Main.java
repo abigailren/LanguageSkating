@@ -12,6 +12,7 @@ public class Main extends GraphicsProgram{
     ArrayList<String> englishWords = new ArrayList<String>();
     ArrayList<String> learnedWords = new ArrayList<String>();
 
+
     public static void main(String[] args){
         new Main().start(args);
     }
@@ -22,6 +23,7 @@ public class Main extends GraphicsProgram{
         /*Language language = new German();
         ArrayList<String> wordList = language.genRandList();
         System.out.println(wordList.get(0));*/
+        add(open.instructions);
         add(open.germany);
         add(open.japan);
         add(open.china);
@@ -59,19 +61,13 @@ public class Main extends GraphicsProgram{
         gobj = getElementAt(last);
         if (gobj.equals(open.germany)||gobj.equals(open.germanyBio)) {
             selection="germany";
-            System.out.println(selection);
         }
         else if (gobj.equals(open.japan)||gobj.equals(open.japanBio)) {
             selection="japan";
-            System.out.println(selection);
         } else if (gobj.equals(open.china)||gobj.equals(open.chinaBio)) {
-            add(new GLabel("Yolo", 450, 300));
             selection="china";
-            System.out.println(selection);
         } else if (gobj.equals(open.spain)||gobj.equals(open.spainBio)) {
-            add(new GLabel("Lol", 650, 300));
             selection="spain";
-            System.out.println(selection);
         }
 
     }

@@ -18,10 +18,14 @@ public class Opening extends GCompound {
     Paragraph japanBio = new Paragraph(30,bio.getBio("japan"));
     Paragraph chinaBio = new Paragraph(30,bio.getBio("china"));
     Paragraph spainBio = new Paragraph(30,bio.getBio("spain"));
+    String instruct = "Welcome to Language Skating! Hover over a character to read their bios "+
+            "and click on a character to start the game in the language of your choice.";
+    Paragraph instructions = new Paragraph(100, instruct);
     private GObject gobj;
     String selection="";
 
     public Opening(){
+        add(instructions,50,50);
         germany.setSize(150, 300);
         japan.setSize(150, 300);
         china.setSize(150, 300);
