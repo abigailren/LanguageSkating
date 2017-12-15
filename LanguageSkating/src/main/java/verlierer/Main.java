@@ -7,7 +7,13 @@ import java.awt.event.MouseEvent;
 import java.util.*;
 import java.util.List;
 
+
 public class Main extends GraphicsProgram{
+    /**
+     * The GObject gobj is used to see which image is chosen and clicked by the player.
+     * The selection String is used in order to see and tell the player what decision they made.
+     *
+     */
     private GObject gobj;
     String selection;
     Opening open = new Opening();
@@ -17,10 +23,17 @@ public class Main extends GraphicsProgram{
     Plot plot;
 
 
+    /**
+     * The main method
+     * @param args
+     */
     public static void main(String[] args){
         new Main().start(args);
     }
 
+    /**
+     * The run method
+     */
     public void run(){
 
         this.setSize(1000,700);
