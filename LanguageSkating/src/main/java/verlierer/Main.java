@@ -60,6 +60,10 @@ public class Main extends GraphicsProgram{
         language.genRandList();
         englishWords = language.getQuizzedEnglishWords();
         learnedWords = language.getQuizzedWords();
+
+
+
+
          GLabel english = new GLabel("English",50,100);
         english.setFont("*-*-60");
         add(english);
