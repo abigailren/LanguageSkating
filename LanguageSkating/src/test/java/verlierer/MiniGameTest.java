@@ -20,7 +20,7 @@ public class MiniGameTest extends TestCase {
     }
 
     public void testCreateCheckpoint(){
-        
+
     }
 
 }

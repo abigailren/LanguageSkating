@@ -193,6 +193,12 @@ public class Main extends GraphicsProgram{
         }
     }
 
+    /**
+     * unused code: would be implemented in a future version of application
+     * @param high
+     * @param low
+     * @return score
+     */
     public static int otherScore(int high, int low) {
         double random = Math.random();
         int range = high-low;

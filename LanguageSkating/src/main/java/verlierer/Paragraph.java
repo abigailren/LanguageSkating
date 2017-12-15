@@ -7,7 +7,18 @@ public class Paragraph extends GCompound {
     protected int MAX_CHARS;
     protected String text;
     protected GLabel[] lines;
-    
+
+    /**
+     * Constructor
+     *
+     * @param chars
+     * @param text
+     * creates a new instance of the Paragraph class
+     * sets MAX_CHARS to parameter chars
+     * sets text to parameter text
+     * gets estimated lines and instantiated variable lines
+     * calls methods to create Labels to be used
+     */
     public Paragraph(int chars, String text) {
         this.MAX_CHARS = chars;
         this.text = text;
@@ -17,7 +28,11 @@ public class Paragraph extends GCompound {
         adjustPositions();
         addLabels();
     }
-    
+
+    /**
+     * uses StringTokenizer to go through string and adds character to each element in lines
+     * when line hits the MAX_CHARS, goes to next element
+     */
     public void createLabels() {
         StringTokenizer tokenizer = new StringTokenizer(text);
         String line = null;
