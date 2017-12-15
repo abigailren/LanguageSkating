@@ -4,24 +4,24 @@ import java.util.*;
 
 public class Question extends GCompound{
 
-    static String english, translation, languageName;
-    static List<String> words = new ArrayList();
-    static List<String> translationWordList, learnedWords, learnedTranslatedWords;
+    String english, translation, languageName;
+    List<String> words = new ArrayList();
+    List<String> translationWordList, learnedWords, learnedTranslatedWords;
 
     public Question(Language language) {
-        this.learnedWords = language.getLearnedEnglishWords();
-        this.learnedTranslatedWords = language.getLearnedWords();
+        this.learnedWords = language.getQuizzedEnglishWords();
+        this.learnedTranslatedWords = language.getQuizzedWords();
         this.translationWordList = language.getWordList();
         this.languageName = language.getLanguageName();
     }
 
-    public static void selectEnglish() {
+    public void selectEnglish() {
         Random rand = new Random();
         int n = rand.nextInt(learnedWords.size());
         english = learnedWords.get(n);
     }
 
-    public static void arrayOfWords() {
+    public void arrayOfWords() {
         words.add(learnedTranslatedWords.get(learnedWords.indexOf(english)));
         Random rand = new Random();
         List<String> gwords = translationWordList;
@@ -44,6 +44,15 @@ public class Question extends GCompound{
     public String printQuestion() {
         selectEnglish();
         arrayOfWords();
-        return "What is " + english + " translated into " + languageName+"?";
+        String word = english.toLowerCase();
+        return "What is \"" + word + "\" translated into " + languageName+"?";
+    }
+
+    public List<String> getWords(){
+        return words;
+    }
+
+    public String getTranslation() {
+        return translation;
     }
 }
