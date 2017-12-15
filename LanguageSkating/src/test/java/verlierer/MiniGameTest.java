@@ -3,9 +3,8 @@ package verlierer;
 import junit.framework.TestCase;
 
 public class MiniGameTest extends TestCase {
-    public void testRun() throws Exception {
-        assertEquals(null,run());
-    }
+    MiniGame miniGame = new MiniGame(new German());
+
 
     public void testSetUpGame() throws Exception {
 
@@ -18,6 +17,10 @@ public class MiniGameTest extends TestCase {
     }
 
     public void testMain() throws Exception {
+    }
+
+    public void testCreateCheckpoint(){
+        
     }
 
 }
