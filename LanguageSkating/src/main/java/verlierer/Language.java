@@ -22,21 +22,17 @@ public abstract class Language {
 
 
     public void genRandList() {
-        ArrayList<String> temp1 = wordList;
+        ArrayList<String> temp1 = new ArrayList<String>(wordList);
         ArrayList<String> temp2 = new ArrayList<String>(translatedWordList);
 
         for (int i=0; i<5; i++) {
 
             Random rand = new Random();
             int  n = rand.nextInt(temp1.size());
-            System.out.println(temp1.get(n));
             quizzedEnglishWords.add(temp1.get(n));
             temp1.remove(n);
-            System.out.println("Before "+translatedWordList.size());
-            System.out.println(temp2.get(n));
             quizzedWords.add(temp2.get(n));
             temp2.remove(n);
-            System.out.println("After " +translatedWordList.size());
         }
     }
 

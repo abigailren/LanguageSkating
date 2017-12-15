@@ -2,8 +2,10 @@ package verlierer;
 import acm.graphics.*;
 import acm.program.*;
 
+import java.awt.*;
 import java.awt.event.MouseEvent;
 import java.util.*;
+import java.util.List;
 
 public class Main extends GraphicsProgram{
     private GObject gobj;
@@ -21,7 +23,7 @@ public class Main extends GraphicsProgram{
 
     public void run(){
 
-        this.setSize(1000,800);
+        this.setSize(1000,700);
         /*Language language = new German();
         ArrayList<String> wordList = language.genRandList();
         System.out.println(wordList.get(0));*/
@@ -30,20 +32,19 @@ public class Main extends GraphicsProgram{
         add(open.japan);
         add(open.china);
         add(open.spain);
-        System.out.println(selection);
         addMouseListeners();
         //while(selection.equals(null)){
         waitForClick();
         //removeAll();
-        System.out.println("AHHHHHH");
+        while (selection==null){
+            waitForClick();
+        }
        // while (selection.equals(null)){
         removeAll();
         //}
         Language language = setLanguage(selection);
 
-        System.out.println("plot");
         plot = new Plot(language);
-        System.out.println("plot");
         addScene(plot.scene(plot.firstScene,20));
         waitForClick();
         removeAll();
@@ -61,9 +62,10 @@ public class Main extends GraphicsProgram{
         englishWords = language.getQuizzedEnglishWords();
         learnedWords = language.getQuizzedWords();
 
+        MiniGame miniGame = new MiniGame(language);
+        miniGame.main(null);
 
-
-
+/*
          GLabel english = new GLabel("English",50,100);
         english.setFont("*-*-60");
         add(english);
@@ -96,7 +98,7 @@ public class Main extends GraphicsProgram{
             if (words.get(i).equals(question.getTranslation())){
                 answer = randAnswer;
             }
-        }
+        }*/
         int score = 0;
 
         System.out.println("Player: "+ score);
@@ -122,14 +124,9 @@ public class Main extends GraphicsProgram{
             selection = "china";
         } else if (gobj.equals(open.spain) || gobj.equals(open.spainBio)) {
             selection = "spain";
-        } else if (gobj.equals(answer)) {
-            removeAll();
-            GLabel eh = new GLabel("YOU WIN!", 450, 350);
-            eh.setFont("*-*-50");
-            add(eh);
-        } else {
-            removeAll();
-            add(new GLabel("YOU LOSE!", 500, 400));
+        }
+        else{
+            selection=null;
         }
 
     }

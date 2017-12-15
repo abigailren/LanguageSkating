@@ -29,14 +29,15 @@ public class Question extends GCompound{
         //set translation to the first word of words
         translation = words.get(0);
 
+        learnedWords.remove(english);
+        learnedTranslatedWords.remove(translation);
+
         //remove word from gwords
         gwords.remove(translation);
         for (int i=1; i<4; i++) {
             int n = rand.nextInt(gwords.size());
             //add random words from gwords and remove them when done
-            System.out.println("size: " +gwords.size());
-            System.out.println("round " + i);
-            System.out.println(n);
+
             words.add(gwords.get(n));
             gwords.remove(n);
         }
@@ -48,6 +49,7 @@ public class Question extends GCompound{
             words.remove(n);
         }
         words = temp;
+
     }
 
     public String printQuestion() {

@@ -21,22 +21,24 @@ public class MiniGame extends GraphicsProgram{
     private GOval checkpoint1, checkpoint2;
     private final GObject skater;
     private final GImage rink;
-    private boolean skatingAlong;
     private GRect questionBox;
     private Question question;
-    Language language;
+    private static Language language;
     GLabel answer;
     int score;
     ArrayList<String> englishWords;
     ArrayList<String> learnedWords;
+    GLabel correct = new GLabel("Correct!", 450, 350);
+    GLabel wrong = new GLabel("Wrong!", 450, 350);
+    ArrayList<GLabel> answers = new ArrayList<GLabel>();
 
 
 
 
-    public MiniGame() {
+    public MiniGame(Language language) {
         this.skater = new GImage("skaterIcon.png");
-        this.rink = new GImage("rink.png",0,0);
-        this.language = new German();
+        this.rink = new GImage("rink.png");
+        this.language = language;
     }
 
 
@@ -66,8 +68,12 @@ public class MiniGame extends GraphicsProgram{
         victoryMessage.setFont("SansSerif-36");
         victoryMessage.setColor(Color.MAGENTA);
         add(victoryMessage);
+        GLabel finalScore = new GLabel("Final Score: "+score,100,400);
+        finalScore.setFont("SansSerif-30");
+        finalScore.setColor(Color.MAGENTA);
+        add(finalScore);
         skater.setVisible(false);
-        System.out.println("score " +score);
+        System.out.println(score);
         waitForClick();
         victoryMessage.setVisible(false);
 
@@ -82,12 +88,13 @@ public class MiniGame extends GraphicsProgram{
      * Called by the run method to set up the initial scene.
      * Creates the background image and adds KeyListeners
      */
-    private void setUpGame() {
+    public void setUpGame() {
         //set rink as the background image, and set the location at the origin
         //as the size of the image rink is the same as that of the application
         // in order to cover the the full background
+        this.setSize(1000,700);
+        rink.setSize(1000,700);
         add(rink);
-        rink.setSize(1000,800);
         rink.sendToBack();
         addKeyListeners();
         //add KeyListeners to navigate the rink
@@ -110,10 +117,12 @@ public class MiniGame extends GraphicsProgram{
         englishWords = language.getQuizzedEnglishWords();
         learnedWords = language.getQuizzedWords();
         score=0;
+        correct.setFont("*-*-36");
+        wrong.setFont("*-*-36");
     }
 
 
-    private void runGame(){
+    public void runGame(){
 
         setCheckpoints();
         letsSkate();
@@ -121,7 +130,7 @@ public class MiniGame extends GraphicsProgram{
     }
 
     private void letsSkate(){
-        while(skatingAlong = true){
+        while(true){
             double c2x = checkpoint2.getX();
             double c2y = checkpoint2.getY();
 
@@ -159,17 +168,19 @@ public class MiniGame extends GraphicsProgram{
             qImage.sendToFront();
             question.add(qImage);
             List<String> words = question.getWords();
-            for (int i = 0; i < words.size(); i++) {
+            for (int i = 0;i<words.size();i++){
                 GLabel randAnswer = new GLabel(words.get(i));
                 randAnswer.setFont("*-*-30");
-                if (i % 2 == 0) {
-                    question.add(randAnswer, 200, 450 + (i / 2) * 50);
-                } else {
-                    question.add(randAnswer, 500, 450 + (i / 2) * 50);
+                if (i%2==0){
+                    add(randAnswer,200,450+(i/2)*50);
                 }
-                if (words.get(i).equals(question.getTranslation())) {
+                else{
+                    add(randAnswer,500,450+(i/2)*50);
+                }
+                if (words.get(i).equals(question.getTranslation())){
                     answer = randAnswer;
                 }
+                answers.add(randAnswer);
             }
             englishWords.remove(question.getEnglish());
             learnedWords.remove(question.getTranslation());
@@ -195,7 +206,7 @@ public class MiniGame extends GraphicsProgram{
         //find a random
         rgen = new RandomGenerator();
         randyX = rgen.nextDouble(100,900);
-        randyY = rgen.nextDouble(100,700);
+        randyY = rgen.nextDouble(100,600);
 
         checkpoint1 = createCheckpoint();
         checkpoint1.setColor(Color.RED);
@@ -211,6 +222,8 @@ public class MiniGame extends GraphicsProgram{
     }
 
     public void keyPressed(KeyEvent e) {
+        remove(correct);
+        remove(wrong);
         double dx = skater.getX();
         double dy = skater.getY();
         switch (e.getKeyCode()) {
@@ -261,20 +274,30 @@ public class MiniGame extends GraphicsProgram{
      GObject gobj = getElementAt(last);
      if (gobj.equals(answer)) {
          score+=5;
-         /*GLabel eh = new GLabel("YOU WIN!", 450, 350);
-         eh.setFont("*-*-50");
-         add(eh);
-         */
+         add(correct);
+
      } else {
          score+=1;
+         add(wrong);
 
      }
+
      remove(question);
      remove(questionBox);
+     for(int i=0;i<answers.size();i++){
+         remove(answers.get(i));
+     }
  }
 
  public static void main(String[] args) {
-     new MiniGame().start();
+     new MiniGame(language).start();
+ }
+
+ public GObject getSkater(){
+     return skater;
+ }
+ public int getScore(){
+     return score;
  }
 
 }
