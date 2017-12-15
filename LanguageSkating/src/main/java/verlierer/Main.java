@@ -54,6 +54,10 @@ public class Main extends GraphicsProgram{
             foreignWord.setFont("*-*-40");
             add(foreignWord, 350, i * 70 + 170);
         }
+        Question question = new Question(language);
+        GLabel qImage = new GLabel(question.printQuestion(),200,400);
+        qImage.setFont("*-*-30");
+        add(qImage);
     }
 
     public void mouseClicked(MouseEvent e) {
