@@ -187,7 +187,7 @@ public class MiniGame extends GraphicsProgram{
      * is filled out in white.
      */
     private void createQuestionBox(){
-        questionBox = new GRect(250, 200, 500, 400);
+        questionBox = new GRect(100, 100, 800, 500);
         questionBox.setFilled(true);
         questionBox.setFillColor(Color.white);
         add(questionBox);
@@ -207,7 +207,7 @@ public class MiniGame extends GraphicsProgram{
         private void addQuestion(){
 
             question = new Question(language);
-            GLabel qImage = new GLabel(question.printQuestion(), 300, 250);
+            GLabel qImage = new GLabel(question.printQuestion(), 200, 250);
             qImage.setFont("*-*-30");
             qImage.setColor(Color.black);
             qImage.sendToFront();
