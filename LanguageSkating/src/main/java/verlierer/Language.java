@@ -3,7 +3,7 @@ import java.util.*;
 
 public abstract class Language {
     String languageName;
-    String[] words = new String[] {"Hello", "Goodbye", "Yes",
+    final String[] words = new String[] {"Hello", "Goodbye", "Yes",
             "No", "Thanks", "Good", "Bad", "Not", "Happy",
             "Sad", "Who", "What", "When", "Where", "Why", "How"};
 
@@ -14,9 +14,13 @@ public abstract class Language {
 
     public abstract Character createCharacter();
 
-    //randomly generates a list of words to be used in Question
-    //learnedEnglishWords has a list of words to be tested on
-    //learnedWords is the corresponding list of words of learnedEnglishWords
+    /**
+     * randomly generates a list of words to be used in Question
+     * learnedEnglishWords has a list of words to be tested on
+     * learnedWords is the corresponding list of words of learnedEnglishWords
+     */
+
+
     public void genRandList() {
         for (int i=0; i<3; i++) {
             Random rand = new Random();
@@ -30,25 +34,40 @@ public abstract class Language {
         }
     }
 
-    //get getLearnWords
+    /**
+     * get getLearnWords
+     */
+
     public ArrayList<String> getQuizzedWords(){
         return quizzedWords;
     }
 
-    //get learnedEnglishWords
+    /**
+     *  get learnedEnglishWords
+     */
+
     public ArrayList<String> getQuizzedEnglishWords() {
                 return quizzedEnglishWords;
             }
 
-    //abstract method to get translated version of String WORDS from subclass
+    /**
+     * abstract method to get translated version of String WORDS from subclass
+     */
+
     public abstract ArrayList<String> getWordList();
 
-    //gets the english list of words wordList
+    /**
+     * gets the english list of words wordList
+     */
+
     public ArrayList<String> getList(){
         return wordList;
     }
 
-    //returns the name of the language
+    /**
+     * returns the name of the language
+     */
+
     public String getLanguageName(){return languageName;}
 
 }

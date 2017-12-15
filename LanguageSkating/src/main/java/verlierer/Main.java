@@ -93,6 +93,17 @@ public class Main extends GraphicsProgram{
                 answer = randAnswer;
             }
         }
+        int score = 0;
+
+        System.out.println("Player: "+ score);
+        System.out.println("Kyle Deitrich: " + otherScore(38, 15));
+        System.out.println("Terry Ellis: " + otherScore(22, 10));
+        System.out.println("Reginald Germaine: " + otherScore(35, 18));
+        System.out.println("Frederick Finkelton: " + otherScore(45, 36));
+        System.out.println("Kwam Almanac: " + otherScore(33, 25));
+        System.out.println("Mary Zweidenfrued: " + otherScore(49, 40));
+        System.out.println("PB: " + otherScore(49, 40));
+        System.out.println("Wan Go: " + otherScore(49, 40));
 
     }
 
@@ -180,4 +191,14 @@ public class Main extends GraphicsProgram{
             bottomLine+=numLines*20+20;
         }
     }
+
+    public static int otherScore(int high, int low) {
+        double random = Math.random();
+        int range = high-low;
+        int score = (int) (random*range) + low;
+        return score;
+    }
+
+
+
 }
